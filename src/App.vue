@@ -1,80 +1,82 @@
 <template>
-  <HelloWorld/>
-  <Product/>
+  <Header />
+  <SubHeader />
+  <Promo />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Product from './components/Product.vue'
+import Header from './components/Header.vue'
+import SubHeader from './components/SubHeader.vue'
+import Promo from './components/Promo.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Product,
+    Header,
+    SubHeader,
+    Promo
   }
 }
 </script>
 
 <style>
-
-@font-face {
-    font-family: 'GT Eesti Pro Display';
-    src: url('fonts/GT\ Eesti\ Pro\ Display-Thin.woff2');
+    @font-face {
+    font-family: "GT Eesti Pro Display";
+    src: url("fonts/GT\ Eesti\ Pro\ Display-Thin.woff2");
     font-style: normal;
     font-weight: 100;
-}
+    }
 
-@font-face {
-    font-family: 'GT Eesti Pro Display';
-    src: url('fonts/GT\ Eesti\ Pro\ Display-Light.woff2');
+    @font-face {
+    font-family: "GT Eesti Pro Display";
+    src: url("fonts/GT\ Eesti\ Pro\ Display-Light.woff2");
     font-style: normal;
     font-weight: 200;
-}
+    }
 
-@font-face {
-    font-family: 'GT Eesti Pro Display';
-    src: url('fonts/GT\ Eesti\ Pro\ Display-Regular.woff2');
+    @font-face {
+    font-family: "GT Eesti Pro Display";
+    src: url("fonts/GT\ Eesti\ Pro\ Display-Regular.woff2");
     font-style: normal;
     font-weight: 300;
-}
+    }
 
-@font-face {
-    font-family: 'GT Eesti Pro Display';
-    src: url('fonts/GT\ Eesti\ Pro\ Display-Medium.woff2');
+    @font-face {
+    font-family: "GT Eesti Pro Display";
+    src: url("fonts/GT\ Eesti\ Pro\ Display-Medium.woff2");
     font-style: normal;
     font-weight: 500;
-}
+    }
 
-@font-face {
-    font-family: 'GT Eesti Pro Display';
-    src: url('fonts/GT\ Eesti\ Pro\ Display-Bold.woff2');
+    @font-face {
+    font-family: "GT Eesti Pro Display";
+    src: url("fonts/GT\ Eesti\ Pro\ Display-Bold.woff2");
     font-style: normal;
     font-weight: 700;
-}
+    }
 
-* {
-    font-family: 'GT Eesti Pro Display';
+    * {
+    font-family: "GT Eesti Pro Display";
     margin: 0;
     padding: 0;
     font-weight: 300;
-}
+    }
 
-h3 {
+    h3 {
     font-weight: 300;
-}
+    }
 
-ul {
+    ul {
     list-style: none;
-}
+    }
 
-a {
+    a {
     text-decoration: none;
-}
+    }
 
-.container {
+    .container {
     padding-left: 115px;
     padding-right: 115px;
     max-width: calc(128rem + 40px);
-}
+    }
 </style>

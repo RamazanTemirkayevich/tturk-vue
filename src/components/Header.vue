@@ -4,7 +4,7 @@
       <div class="top-nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link" href="#">Sell​​ at Turk</a>
+            <a class="nav-link" href="#">Sell at Turk</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Help</a>
@@ -34,7 +34,7 @@
       </div>
       <div class="header__main">
         <div class="header__logo">
-          <img src="img/logo.png" alt="">
+          <img src="@/assets/logo.png" alt="">
         </div>
         <button class="header__button">
           <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,96 +135,152 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .header {
-    max-width: 1440px;
-    width: 100%;
-    height: 110px;
-    left: 0px;
-    top: 0px;
-    background: #FAFAFA;
-  }
+.header {
+  max-width: 1440px;
+  width: 100%;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+  background: #FAFAFA;
+}
 
-  .header .header-wrapper {
-    max-width: 1210px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
+.header .header-wrapper {
+  max-width: 1210px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
-  .header .header-wrapper .top-nav {
-    display: flex;
-    justify-content: end;
-    margin-right: 45px;
-    align-items: center;
-    height: 35px;
-  }
+.header .header-wrapper .top-nav {
+  display: flex;
+  justify-content: end;
+  margin-right: 45px;
+  align-items: center;
+  height: 35px;
+}
 
-  .header .header-wrapper .top-nav .nav-list {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
+.header .header-wrapper .top-nav .nav-list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 
-  .header .header-wrapper .top-nav .nav-list .nav-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  }
+.header .header-wrapper .top-nav .nav-list .nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
 
-  .header .header-wrapper .top-nav .nav-list .nav-item select {
-    border: none;
-    background: #fafafa;
-  }
+.header .header-wrapper .top-nav .nav-list .nav-item select {
+  border: none;
+  background: #fafafa;
+}
 
-  .header .header-wrapper .top-nav .nav-list .nav-item .nav-link {
-    text-decoration: none;
-    color: #0A0A0A;
-    font-size: 14px;
-  }
+.header .header-wrapper .top-nav .nav-list .nav-item .nav-link {
+  text-decoration: none;
+  color: #0A0A0A;
+  font-size: 14px;
+}
 
-  .header .header-wrapper .header__button {
-    margin-left: 15px;
-    width: 75px;
-    height: 39px;
-    background-color: blue;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
+.header .header-wrapper .header__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .header .header-wrapper .header__search {
-    margin-left: 15px;
-    border-radius: 5px;
-    max-width: 582px;
-    width: 100%;
-  }
+.header .header-wrapper .header__main .header__button {
+  margin-left: 15px;
+  width: 75px;
+  height: 39px;
+  background-color: #2F76FF;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
 
-  .header .header-wrapper .header__search .search-form {
-    display: flex;
-  }
+.header .header-wrapper .header__main .header__search {
+  margin-left: 15px;
+  border-radius: 5px;
+  max-width: 582px;
+  width: 100%;
+}
 
-  .header .header-wrapper .header__search .search-input-wrapper {
-    width: 100%;
-  }
+.header .header-wrapper .header__search .search-form {
+  display: flex;
+}
 
-  .header .header-wrapper .header__search .search-inside {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 35px;
-    border: 2px solid #2F76FF;
-    background: #fff;
-    border-radius: 5px;
-  }
+.header .header-wrapper .header__search .search-input-wrapper {
+  width: 100%;
+}
 
-  .header .header-wrapper .header__search .search-inside .search-inside__btn {
-    width: 110px;
-    height: 31px;
-    background: #EBF2FF;
-    border-radius: 5px;
-    border: none;
-  }
+.header .header-wrapper .header__search .search-inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  border: 2px solid #2F76FF;
+  background: #fff;
+  border-radius: 5px;
+}
 
+.header .header-wrapper .header__search .search-inside .search-inside__btn {
+  width: 110px;
+  height: 31px;
+  background: #EBF2FF;
+  border-radius: 5px;
+  border: none;
+}
+
+.header .header-wrapper .header__search .search-inside .search-inside__btn .header__select {
+  border: none;
+  background: #EBF2FF;
+}
+
+.header .header-wrapper .header__search .search-input {
+  text-indent: 15px;
+  border: none;
+  outline: none;
+  width: 274px;
+}
+
+.header .header-wrapper .header__search .btn-search {
+  display: flex;
+  align-items: center;
+  width: 98px;
+  background: #2F76FF;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 14px;
+  color: #ffff;
+  border: none;
+}
+
+.header .header-wrapper .header__search .btn-search span {
+  margin-left: 1em;
+  padding: 2px;
+}
+
+.header .header-wrapper .admin {
+  margin-left: 33px;
+}
+
+.header .header-wrapper .admin .admin-list {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.header .header-wrapper .admin .admin-list .admin-item {
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.header .header-wrapper .admin .admin-list .admin-item span {
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+  margin-top: 1px;
+  color: #0A0A0A;
+}
 </style>
