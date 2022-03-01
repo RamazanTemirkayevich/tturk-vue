@@ -2,19 +2,28 @@
   <Header />
   <SubHeader />
   <Promo />
+  <Descr />
+  <Carousel />
+  <Review />
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import SubHeader from './components/SubHeader.vue'
 import Promo from './components/Promo.vue'
+import Descr from './components/Descr.vue'
+import Carousel from './components/Carousel.vue'
+import Review from './components/Review.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     SubHeader,
-    Promo
+    Promo,
+    Descr,
+    Carousel,
+    Review
   }
 }
 </script>
