@@ -2,6 +2,9 @@
   <header class="header">
     <div class="header-wrapper">
       <div class="top-nav">
+        <div class="top-logo">
+          <img src="@/assets/logo.png" alt="">
+        </div>
         <ul class="nav-list">
           <li class="nav-item">
             <a class="nav-link" href="#">Sell at Turk</a>
@@ -24,7 +27,7 @@
           <li class="nav-item">
             <div>
               <select name="" id="">
-                <option value=""><img src="/img/flag.png" alt=""> English</option>
+                <option value=""><img src="" alt=""> English</option>
                 <option value="">Russian</option>
                 <option value="">Turkish</option>
               </select>
@@ -283,4 +286,55 @@
   margin-top: 1px;
   color: #0A0A0A;
 }
+
+@media (max-width: 1440px) {
+        .header .header-wrapper .top-nav .top-logo {
+            display: none;
+        }
+    }
+@media (max-width: 414px) {
+        .header {
+            max-width: 414px;
+        }
+
+        .header .header-wrapper {
+            max-width: 414px;
+        }
+
+        .header .header-wrapper .top-nav .top-logo {
+            display: block;
+        }
+
+        .header .header-wrapper .top-nav .nav-list {
+            display: none;
+        }
+
+        .header .header-wrapper .header__main {
+            margin-top: 10px;
+        }
+
+        .header .header-wrapper .header__main .header__logo {
+            display: none;
+        }
+
+        .header .header-wrapper .header__main .header__button {
+            display: none;
+        }
+
+        .header .header-wrapper .header__main .header__search {
+            max-width: 340px;
+        }
+
+        .header .header-wrapper .header__main .header__search .search-form .search-input-wrapper .search-inside .search-input {
+            width: 200%;
+        }
+
+        .header .header-wrapper .header__main .header__search .search-form .btn-search span {
+            display: none;
+        }
+
+        .header .header-wrapper .header__main .admin {
+            display: none;
+        }
+    }
 </style>
