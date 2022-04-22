@@ -646,4 +646,19 @@ export default {
     font-weight: 200;
     color: #919191;
 }
+
+@media (max-width: 2560px) {
+    .carousel .carousel-buttons .buttons-next {
+        margin-left: 156em;
+    }
+    .carousel .carousel-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .carousel .carousel-buttons .buttons-next {
+        margin-left: 89em;
+    }
+}
 </style>

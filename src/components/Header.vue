@@ -133,13 +133,15 @@
 </template>
 
 <script>
+export default {
 
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+
 .header {
-  max-width: 1440px;
   width: 100%;
   height: 110px;
   left: 0px;
@@ -148,7 +150,6 @@
 }
 
 .header .header-wrapper {
-  max-width: 1210px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -161,6 +162,10 @@
   margin-right: 45px;
   align-items: center;
   height: 35px;
+}
+
+.header .header-wrapper .top-nav .top-logo {
+  display: none;
 }
 
 .header .header-wrapper .top-nav .nav-list {
@@ -287,54 +292,61 @@
   color: #0A0A0A;
 }
 
-@media (max-width: 1440px) {
-        .header .header-wrapper .top-nav .top-logo {
-            display: none;
-        }
-    }
-@media (max-width: 414px) {
-        .header {
-            max-width: 414px;
-        }
+@media only screen and (min-width: 320px) {
+  .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
 
-        .header .header-wrapper {
-            max-width: 414px;
-        }
+  .header .header-wrapper .top-nav {
+    justify-content: flex-start;
+  }
 
-        .header .header-wrapper .top-nav .top-logo {
-            display: block;
-        }
+  .header .header-wrapper .top-nav .top-logo {
+    display: block;
+    padding: 16px;
+  }
 
-        .header .header-wrapper .top-nav .nav-list {
-            display: none;
-        }
+  .header .header-wrapper .top-nav .nav-list {
+    display: none;
+  }
 
-        .header .header-wrapper .header__main {
-            margin-top: 10px;
-        }
+  .header .header-wrapper .header__main .header__logo {
+    display: none;
+  }
 
-        .header .header-wrapper .header__main .header__logo {
-            display: none;
-        }
+  .header .header-wrapper .header__main .header__button {
+    display: none;
+  }
 
-        .header .header-wrapper .header__main .header__button {
-            display: none;
-        }
+  .header .header-wrapper .header__main .header__search {
+    padding-top: 15px;
+    width: 290px;
+    margin-left: 0;
+  }
 
-        .header .header-wrapper .header__main .header__search {
-            max-width: 340px;
-        }
+  .header .header-wrapper .header__search .search-input {
+    width: 145px;
+  }
 
-        .header .header-wrapper .header__main .header__search .search-form .search-input-wrapper .search-inside .search-input {
-            width: 200%;
-        }
+  .header .header-wrapper .header__search .search-inside .search-inside__btn {
+    width: 101px;
+  }
 
-        .header .header-wrapper .header__main .header__search .search-form .btn-search span {
-            display: none;
-        }
+  .header .header-wrapper .header__search .btn-search {
+    width: 45px;
+    justify-content: center;
+  }
 
-        .header .header-wrapper .header__main .admin {
-            display: none;
-        }
-    }
+  .header .header-wrapper .header__search .btn-search span {
+    display: none;
+  }
+
+  .header .header-wrapper .admin {
+    display: none;
+  }
+
+}
 </style>

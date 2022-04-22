@@ -9,7 +9,34 @@
              <img class="img-item" src="@/assets/column_img/image44.png" alt="">
              <img class="img-item" src="@/assets/column_img/image49.png" alt="">
         </div>
-        <div class="main-img"></div>
+        <div class="main-img__container">
+            <div class="main-img">
+                <img src="@/assets/column_img/image44.png" alt="">
+            </div>
+        </div>
+
+        <div class="promo-descr__mf">
+            <div class="descr-container">
+                <h3 class="descr-price-title">Retail price</h3>
+                <div class="descr-price">
+                    <p class="descr-price-red">14,25 $</p>
+                    <p class="descr-price-old">15,35 $</p>
+                </div>
+                <h3 class="price-title-second">Wholesale price<span>12,50 $</span></h3>
+                <button class="descr-last-btn">Buy now</button>
+            </div>
+        </div>
+
+        <div class="promo-color__mf">
+            <p>Color:<span>Blue</span></p>
+            <div class="column-img__mf">
+                <img class="img-item__mf" src="@/assets/column_img/image44.png" alt="">
+                <img class="img-item__mf" src="@/assets/column_img/image48.png" alt="">
+                <img class="img-item__mf" src="@/assets/column_img/image49.png" alt="">
+                <img class="img-item__mf" src="@/assets/column_img/image50.png" alt="">
+                <img class="img-item__mf" src="@/assets/column_img/image44.png" alt="">
+            </div>
+        </div>
 
         <div class="promo-title">
              <p class="promo-color">Color: <span>Blue</span></p>
@@ -34,9 +61,9 @@
           <p class="promo-amount">Amount: <span class="promo-amount-span"></span></p>
           <div class="promo-count">
               <div class="promo-counter">
-                 <button class="promo-counter-minus">-</button>
-                 <h3 class="promo-counter-number"></h3>
-                 <button class="promo-counter-plus">+</button>
+                 <button @click="counter--" type="button" class="promo-counter-minus">-</button>
+                 <h3 class="promo-counter-number">{{ counter = 0 }}</h3>
+                 <button @click="counter++" type="button" class="promo-counter-plus">+</button>
              </div>
              <p class="promo-count-title">12451 pcs. in stock</p>
          </div>
@@ -154,16 +181,24 @@ export default {
        cursor: pointer;
    }
 
-   .promo .main-img {
+   .promo .main-img__container .main-img {
         margin-left: 10px;
-        width: 400px;
+        width: 100%;
         height: 510px;
         background: #2F76FF;
-        background: url('~@/assets/column_img/image44.png');
+        background: center no-repeat;
         border: 2px solid #EEEEEE;
         box-sizing: border-box;
         border-radius: 5px;
         cursor: pointer;
+   }
+
+   .promo .promo-descr__mf {
+       display: none;
+   }
+
+   .promo .promo-color__mf {
+       display: none;
    }
 
    .promo .promo-title {
@@ -423,6 +458,7 @@ export default {
        font-size: 26px;
        font-weight: 500;
        color: #CDCDCD;
+       text-decoration: line-through;
    }
 
    .promo .block-price .promo-descr .descr-container .price-title-second {
@@ -507,5 +543,137 @@ export default {
        width: 184px;
        display: flex;
        margin-top: 5px;
+   }
+
+   @media (min-width: 320px) {
+       .promo {
+           flex-direction: column;
+           margin-top: 0;
+       }
+
+       .promo .column-img {
+           display: none;
+       }
+
+       .promo .main-img__container {
+           padding-left: 0;
+           padding-right: 0;
+       }
+
+        .promo .main-img__container .main-img {
+           margin-left: 0;
+           width: 0;
+           height: 410px;
+           border: none;
+       }
+
+       .promo .main-img__container .main-img img {
+           width: 320px;
+           height: 409px;
+       }
+
+        .promo .promo-descr__mf {
+            display: flex;
+            margin-top: 15px;
+            align-items: center;
+            width: 300px;
+            height: 280px;
+            border-radius: 5px;
+        }
+
+        .promo .promo-descr__mf .descr-container {
+            margin: 0 auto;
+            width: 260px;
+            height: 243px;
+        }
+
+        .promo .promo-descr__mf .descr-container .descr-price-title {
+            font-size: 16px;
+            color: #626262;
+        }
+
+        .promo .promo-descr__mf .descr-container .descr-price {
+            display: flex;
+            align-items: center;
+        }
+
+        .promo .promo-descr__mf .descr-container .descr-price .descr-price-red {
+            font-size: 30px;
+            color: #FF3157;
+            font-weight: 700;
+        }
+
+        .promo .promo-descr__mf .descr-container .descr-price .descr-price-old {
+            margin-left: 15px;
+            font-size: 26px;
+            font-weight: 500;
+            color: #CDCDCD;
+            text-decoration: line-through;
+        }
+
+        .promo .promo-descr__mf .descr-container .price-title-second {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #626262;
+        }
+
+        .promo .promo-descr__mf .descr-container .price-title-second span{
+            font-weight: 700;
+            font-size: 30px;
+            color: #0A0A0A;
+        }
+
+        .promo .promo-descr__mf .descr-container .descr-last-btn {
+            margin-top: 10px;
+            width: 100%;
+            height: 35px;
+            background: #EBF2FF;
+            color: #2F76FF;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .promo .promo-color__mf {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .promo .promo-color__mf p {
+            font-style: 16px;
+            color: #626262;
+        }
+
+        .promo .promo-color__mf span {
+            color: #0a0a0a;
+        }
+
+        .promo .promo-color__mf .column-img__mf {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .promo .promo-color__mf .column-img__mf .img-item__mf {
+            margin-bottom: 8px;
+            width: 51px;
+            height: 63px;
+            border: 2px solid #EEEEEE;
+            background: center no-repeat;
+            box-sizing: border-box;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+   }
+
+   @media (min-width: 2560px) {
+       .promo .block-price {
+           margin-left: auto;
+       }
    }
 </style>

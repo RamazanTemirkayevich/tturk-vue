@@ -214,4 +214,10 @@ export default {
     width: 100%;
     border: 1px solid #EEEEEE;
   }
+
+  @media (min-width: 320px) {
+    .subheader {
+      display: none;
+    }
+  }
 </style>

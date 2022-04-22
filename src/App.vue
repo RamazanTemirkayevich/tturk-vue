@@ -88,4 +88,18 @@ export default {
     padding-right: 115px;
     max-width: calc(128rem + 40px);
     }
+
+    @media (min-width: 320px) {
+      .container {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+
+    @media (min-width: 2560px) {
+      .container {
+        padding-left: 215px;
+        padding-right: 215px;
+      }
+    }
 </style>
