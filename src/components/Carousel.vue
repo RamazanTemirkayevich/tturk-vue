@@ -26,9 +26,13 @@
                     <div class="carousel-track">
                         <div class="carousel-item">
                             <div class="carousel-item-img">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0515 1.88578C11.4103 1.15823 10.5208 0.757568 9.54688 0.757568C8.1771 0.757568 7.30988 1.57565 6.8236 2.26196C6.69744 2.44005 6.59011 2.61863 6.5 2.78666C6.40989 2.61863 6.30259 2.44005 6.1764 2.26196C5.69012 1.57565 4.8229 0.757568 3.45312 0.757568C2.47919 0.757568 1.58968 1.15826 0.948467 1.8858C0.336857 2.57983 0 3.50933 0 4.50307C0 5.58478 0.422322 6.59089 1.32907 7.66928C2.13946 8.63311 3.30533 9.62659 4.65537 10.777C5.15844 11.2057 5.67866 11.649 6.23251 12.1336L6.24914 12.1482C6.32095 12.2111 6.41047 12.2425 6.5 12.2425C6.58953 12.2425 6.67905 12.211 6.75086 12.1482L6.76749 12.1336C7.32134 11.649 7.84156 11.2057 8.34471 10.777C9.69467 9.62662 10.8605 8.63313 11.6709 7.66928C12.5777 6.59086 13 5.58478 13 4.50307C13 3.50933 12.6631 2.57983 12.0515 1.88578ZM7.8506 10.1972C7.41693 10.5668 6.97062 10.9471 6.5 11.3562C6.02941 10.9472 5.58307 10.5668 5.14932 10.1972C2.5072 7.94573 0.761719 6.45832 0.761719 4.50307C0.761719 3.69488 1.03099 2.94423 1.51993 2.38942C2.01449 1.82832 2.70103 1.51929 3.45312 1.51929C4.49742 1.51929 5.17248 2.16263 5.55486 2.70234C5.89786 3.18638 6.07684 3.67434 6.13788 3.86165C6.18894 4.01844 6.33511 4.12454 6.5 4.12454C6.66489 4.12454 6.81106 4.01844 6.86212 3.86165C6.92316 3.67434 7.10214 3.18638 7.44514 2.70231C7.82752 2.16263 8.50258 1.51929 9.54688 1.51929C10.299 1.51929 10.9855 1.82832 11.48 2.38942C11.969 2.94423 12.2383 3.69488 12.2383 4.50307C12.2383 6.45832 10.4928 7.94573 7.8506 10.1972Z" fill="#0A0A0A"/>
+                                </svg>
                                 <img src="@/assets/slide_img/image34.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>60,41 $</span>
+                            <span>60,41 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>TV box Xiaomi Mi Box S</p>
                             <div class="carousel-stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -64,12 +68,14 @@
 
                                 <h4 class="carousel-stars-review">115 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image31.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>810,15 $</span>
+                            <span>810,15 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>Smartphone Apple iPhone 11 64GB, black</p>
                             <div class="carousel__stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -105,12 +111,14 @@
 
                                 <h4 class="carousel-stars-review">25 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image35.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>25,15 $</span>
+                            <span>25,15 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>Xiaomi Mi TV 4S 43 T2 42.5 "(2019) dark titani...</p>
                             <div class="carousel-stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -146,12 +154,14 @@
 
                                 <h4 class="carousel-stars-review">25 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image33.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>899,09 $</span>
+                            <span>899,09 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>Samsung Galaxy S10 8 / 128GB Aquamarine...</p>
                             <div class="carousel-stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -187,12 +197,14 @@
 
                                 <h4 class="carousel-stars-review">25 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image36.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>810,15 $</span>
+                            <span>810,15 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>Smartphone Apple iPhone 11 64GB, red...</p>
                             <div class="carousel-stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -228,12 +240,14 @@
 
                                 <h4 class="carousel-stars-review">115 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image34.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>25,15 $</span>
+                            <span>25,15 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>Xiaomi Mi TV 4S 43 T2 42.5 "(2019) dark titani...</p>
                             <div class="carousel__stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -269,12 +283,14 @@
 
                                 <h4 class="carousel-stars-review">115 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image31.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>810,15 $</span>
+                            <span>810,15 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>Smartphone Apple iPhone 11 64GB, red...</p>
                             <div class="carousel-stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -310,12 +326,14 @@
 
                                 <h4 class="carousel-stars-review">115 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image33.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>600,41 $</span>
+                            <span>600,41 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>Xiaomi Mi TV 4S 43 T2 42.5 "(2019) dark titani...</p>
                             <div class="carousel-stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -351,12 +369,14 @@
 
                                 <h4 class="carousel-stars-review">25 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image31.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>810,15 $</span>
+                            <span>810,15 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>Smartphone Apple iPhone 11 64GB, red...</p>
                             <div class="carousel-stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -392,12 +412,14 @@
 
                                 <h4 class="carousel-stars-review">115 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image35.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>60,41 $</span>
+                            <span>60,41 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>TV box Xiaomi Mi Box S</p>
                             <div class="carousel-stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -433,12 +455,14 @@
 
                                 <h4 class="carousel-stars-review">25 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image34.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>60,41 $</span>
+                            <span>60,41 $ <span class="old-price-mf">846,99 $</span></span>
                             <p>TV box Xiaomi Mi Box S</p>
                             <div class="carousel-stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -474,12 +498,14 @@
 
                                 <h4 class="carousel-stars-review">25 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                         <div class="carousel-item">
                             <div class="carousel-item-img">
                                 <img src="@/assets/slide_img/image31.png" alt="">
+                                <div class="discount-block">-12%</div>
                             </div>
-                            <span>60,41 $</span>
+                            <span>60,41 $<span class="old-price-mf">846,99 $</span></span>
                             <p>TV box Xiaomi Mi Box S</p>
                             <div class="carousel-stars">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
@@ -515,6 +541,7 @@
 
                                 <h4 class="carousel-stars-review">115 reviews</h4>
                             </div>
+                            <p class="carousel__undertext">Best jeans store</p>
                         </div>
                     </div>
                 </div>
@@ -613,6 +640,10 @@ export default {
     color: #0A0A0A;
 }
 
+.carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item span .old-price-mf {
+    display: none;
+}
+
 .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item p {
     margin-top: 8px;
     font-weight: 300;
@@ -628,6 +659,14 @@ export default {
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     border-radius: 5px;
+}
+
+.carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item .carousel-item-img svg {
+    display: none;
+}
+
+.carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item .carousel-item-img .discount-block {
+    display: none;
 }
 
 .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item .carousel-item-img img {
@@ -647,18 +686,106 @@ export default {
     color: #919191;
 }
 
-@media (max-width: 2560px) {
-    .carousel .carousel-buttons .buttons-next {
-        margin-left: 156em;
+.carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item .carousel-stars .carousel-stars-review .carousel__undertext {
+    display: none;
+}
+
+@media only screen and (min-width: 320px) {
+    .carousel {
+        padding-top: 20px;
     }
-    .carousel .carousel-wrapper {
+
+    .carousel .carousel-descr .carousel-title {
+        font-size: 20px;
+    }
+
+    .carousel .carousel-descr .carousel-p {
+        display: none;
+    }
+
+    .carousel .carousel-buttons {
+        display: none;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item {
+        width: 137px;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item .carousel-item-img {
+        position: relative;
         width: 100%;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item .carousel-item-img svg {
+        position: absolute;
+        display: block;
+        top: 5px;
+        float: right;
+        right: 5px;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item .carousel-item-img img {
+        width: 89px;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item .carousel-item-img .discount-block {
+        position: absolute;
+        display: flex;
+        left: 5px;
+        bottom: 5px;
+        width: 30px;
+        height: 14px;
+        background: #FF3157;
+        border-radius: 3px;
+        color: #FFFFFF;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item span {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 19px;
+        color: #FF3157;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item span .old-price-mf {
+        display: block;
+        font-size: 11px;
+        text-decoration-line: line-through;
+        color: #919191;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item p {
+        font-size: 12px;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item .carousel-stars, .carousel__stars {
+        display: none;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item .carousel__undertext {
+        display: block;
+        padding-top: 5px;
+        font-size: 12px;
+        text-decoration-line: underline;
+        color: #919191;
     }
 }
 
 @media (max-width: 1440px) {
     .carousel .carousel-buttons .buttons-next {
         margin-left: 89em;
+    }
+}
+
+@media (max-width: 2560px) {
+    .carousel .carousel-buttons .buttons-next {
+        margin-left: 156em;
+    }
+    .carousel .carousel-wrapper {
+        width: 100%;
     }
 }
 </style>

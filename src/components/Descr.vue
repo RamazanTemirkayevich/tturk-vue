@@ -78,6 +78,46 @@
                 </div>
             </div>
         </section>
+
+        <div class="descr-mf">
+            <div class="descr-title">
+                <h2 class="title-name">Description</h2>
+                <p class="name-text">Basic slim jeans with a regular fit. Closure and belt loops with contrast
+                stitching. The <span class="toggle-text">yoke at the back provides a perfect fit on the hips. Aged denim, with bleached spots and
+                moderate fading, immediately grabs attention. Slightly narrowed at the bottom, the model tightly fits
+                the figure, visually stretches the silhouette and slims. Durable denim is breathable, non-irritating,
+                hygroscopic, easy to clean and practical. These jeans are comfortable all day long. A versatile casual
+                piece, perfect for city life. Skinny basic jeans look great with fitted shirts and oversized shirts,
+                jumpers and T-shirts. Shoes will suit them very different - from sports sneakers and sneakers to lace-up
+                boots or brogues. Slim jeans are a practical and comfortable option that should definitely be in your
+                wardrobe.</span></p>
+                <a class="open-text" href="#">Expand description</a>
+            </div>
+
+            <hr class="line">
+
+            <div class="characteristic">
+                <h2 class="char-name">Characteristics</h2>
+                <p>Season <br> <span>Demi-season</span></p>
+                <hr class="line">
+                <p>Material <br> <span>Cotton</span></p>
+                <hr class="line">
+                <p class="shaddow">Material composition <br> <span>100% cotton</span></p>
+                <div class="toggle-chars">
+                    <hr class="line">
+                    <p>Collection <br> <span>Spring-summer</span></p>
+                    <hr class="line">
+                    <p>Model size in photo <br> <span>50</span></p>
+                    <hr class="line">
+                    <p>The growth of the model in the photo <br> <span>181 cm</span></p>
+                    <hr class="line">
+                    <p>A type <br> <span>Jeans</span></p>
+                    <hr class="line">
+                </div>
+                <a class="open-text" href="#">Expand characteristics</a>
+            </div>
+            <hr class="line">
+        </div>
     </div>
 </template>
 
@@ -152,5 +192,74 @@ export default {
 
 .description .descr-container .descr-container-box .descr-container-block .descr-container-item span {
     color: #0A0A0A;
+}
+
+@media only screen and (min-width: 320px) {
+    .description {
+        visibility: hidden;
+    }
+
+    .descr-mf {
+        max-width: 290px;
+    }
+
+    .descr-mf .descr-title .title-name {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .descr-mf .descr-title .name-text {
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 16px;
+        color: #404040;
+    }
+
+    .descr-mf .descr-title .name-text .toggle-text {
+        display: none;
+    }
+
+    .descr-mf .descr-title .open-text {
+        display: block;
+        width: 133px;
+        margin-top: 5px;
+        color: #2F76FF;
+        border-bottom: 1px dashed #2F76FF;
+    }
+
+    .descr-mf .line {
+        margin-top: 20px;
+        display: block;
+        width: 290px;
+        border: 1px solid #EEEEEE;
+    }
+
+    .descr-mf .characteristic {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    .descr-mf .characteristic .toggle-chars {
+        display: none;
+    }
+
+    .descr-mf .characteristic .open-text {
+        display: block;
+        width: 156px;
+        margin-top: 5px;
+        color: #2F76FF;
+        border-bottom: 1px dashed #2F76FF;
+    }
+
+    .descr-mf .characteristic p, .toggle-chars p {
+        padding-top: 10px;
+        color: #919191;
+    }
+
+    .descr-mf .characteristic p span, .toggle-chars p span {
+        color: #0A0A0A;
+    }
 }
 </style>
