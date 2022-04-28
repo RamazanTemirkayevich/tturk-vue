@@ -1,9 +1,100 @@
 <template>
     <div class="container">
         <section class="review">
+            <div class="review__block-mf">
+                <div class="block__container">
+                    <div class="block__container-stars">
+                        <div class="block-stars__item active">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
+                                    fill="#FAB82B" />
+                            </svg>
+                        </div>
+                        <div class="block-stars__item active">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
+                                    fill="#FAB82B" />
+                            </svg>
+                        </div>
+                        <div class="block-stars__item active">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
+                                    fill="#FAB82B" />
+                            </svg>
+                        </div>
+                        <div class="block-stars__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
+                                    fill="#FAB82B" />
+                            </svg>
+                        </div>
+                        <div class="block-stars__item">
+                            <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.75 9.65897L16.6661 9.06176L13.245 0.467224L9.82397 9.06176L0.75 9.65897L7.70967 15.5684L5.42588 24.5327L13.245 19.5903L21.0642 24.5327L18.7804 15.5684L25.75 9.65897Z"
+                                    fill="#CDCDCD" />
+                            </svg>
+                        </div>
+                        <p class="block-stars__p">4.5 / 5</p>
+                    </div>
+                    <hr class="block-line">
+                    <div class="block__container-raiting">
+                        <div class="block__container-item">
+                            <p>5 stars</p>
+                            <div class="block__container-block">
+                                <div class="container-block__one"></div>
+                            </div>
+                            <span>15</span>
+                        </div>
+                        <div class="block__container-item">
+                            <p>4 stars</p>
+                            <div class="block__container-block">
+                                <div class="container-block__two"></div>
+                            </div>
+                            <span>4</span>
+                        </div>
+                        <div class="block__container-item">
+                            <p>3 stars</p>
+                            <div class="block__container-block">
+                                <div class="container-block__three"></div>
+                            </div>
+                            <span>5</span>
+                        </div>
+                        <div class="block__container-item">
+                            <p>2 stars</p>
+                            <div class="block__container-block">
+                                <div class="container-block__four"></div>
+                            </div>
+                            <span>2</span>
+                        </div>
+                        <div class="block__container-item">
+                            <p>1 star</p>
+                            <div class="block__container-block">
+                                <div class="container-block__five"></div>
+                           </div>
+                           <span>0</span>
+                      </div>
+                </div>
+                    <button class="block__container-btn" id="open">Write a review</button>
+                </div>
+            </div>
             <div class="review-content">
                 <h2 class="review-title">Reviews and ratings <span>(25)</span></h2>
                 <hr>
+                <select class="option" name="" id="">
+                    <option value="">Helpful first</option>
+                    <option value="">Lorem</option>
+                    <option value="">Lorem</option>
+                </select>
                 <div class="review-carousel-buttons">
                     <button class="carousel-buttons__prev">
                         <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,40 +163,45 @@
                     <div class="comments-first">
                         <img src="@/assets/account1.png" alt="">
                         <div class="comments-container">
-                            <h2 class="comments-first__name">Jack S.</h2>
-                            <div class="comments-stars">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
-                                        fill="#FAB82B" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
-                                        fill="#FAB82B" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
-                                        fill="#FAB82B" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
-                                        fill="#FAB82B" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.25 5.79532L9.79964 5.43699L7.74701 0.280273L5.69438 5.43699L0.25 5.79532L4.4258 9.34101L3.05553 14.7196L7.74701 11.7541L12.4385 14.7196L11.0683 9.34101L15.25 5.79532Z"
-                                        fill="#CDCDCD" />
-                                </svg>
+                            <div class="account-container">
+                                <img  class="img-account" src="@/assets/account1.png" alt="">
+                                <div class="name-container">
+                                    <h2 class="comments-first__name">Jack S.</h2>
+                                    <div class="comments-stars">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
+                                                fill="#FAB82B" />
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
+                                                fill="#FAB82B" />
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
+                                                fill="#FAB82B" />
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
+                                                fill="#FAB82B" />
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.25 5.79532L9.79964 5.43699L7.74701 0.280273L5.69438 5.43699L0.25 5.79532L4.4258 9.34101L3.05553 14.7196L7.74701 11.7541L12.4385 14.7196L11.0683 9.34101L15.25 5.79532Z"
+                                                fill="#CDCDCD" />
+                                        </svg>
 
-                                <h4 class="comments-stars-title">10 July 2020</h4>
+                                        <h4 class="comments-stars-title">10 July 2020</h4>
+                                    </div>
+                                </div>
                             </div>
                             <div class="comments-descr">
                                 <p><span>Advantages:</span> Excellent product, good
@@ -155,40 +251,45 @@
                     <div class="comments-second">
                         <img class="comments-second-img" src="@/assets/account2.png" alt="">
                         <div class="comments-container">
-                            <h2 class="comments-first__name">Jack S.</h2>
-                            <div class="comments-stars">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
-                                        fill="#FAB82B" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
-                                        fill="#FAB82B" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
-                                        fill="#FAB82B" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
-                                        fill="#FAB82B" />
-                                </svg>
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
-                                        fill="#FAB82B" />
-                                </svg>
+                            <div class="account-container">
+                                <img class="comments-second-img-mf" src="@/assets/account2.png" alt="">
+                                <div class="name-container">
+                                    <h2 class="comments-first__name">Jack S.</h2>
+                                    <div class="comments-stars">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
+                                                fill="#FAB82B" />
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
+                                                fill="#FAB82B" />
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
+                                                fill="#FAB82B" />
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
+                                                fill="#FAB82B" />
+                                        </svg>
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.4375 5.79532L9.98714 5.43699L7.93451 0.280273L5.88188 5.43699L0.4375 5.79532L4.6133 9.34101L3.24303 14.7196L7.93451 11.7541L12.626 14.7196L11.2558 9.34101L15.4375 5.79532Z"
+                                                fill="#FAB82B" />
+                                        </svg>
 
-                                <h4 class="comments-stars-title">9 July 2020</h4>
+                                        <h4 class="comments-stars-title">9 July 2020</h4>
+                                    </div>
+                                </div>
                             </div>
                             <div class="comments-descr">
                                 <p class="comments-descr__three">I checked the goods according to the
@@ -329,6 +430,10 @@ export default {
     width: 100%;
 }
 
+.review .review__block-mf {
+    display: none;
+}
+
 .review .review-content {
     width: 725px;
     height: 903px;
@@ -350,6 +455,10 @@ export default {
     height: 0px;
     border: 1px solid #EEEEEE;
     transform: rotate(0.05deg);
+}
+
+.review .review-content .option {
+    display: none;
 }
 
 .review .review-content .review-carousel-buttons {
@@ -442,13 +551,16 @@ export default {
     display: flex;
     align-items: flex-start;
     width: 850px;
-    height: 364px;
 }
 
 .review .review-content .review-comments .comments-first .comments-container {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
+}
+
+.review .review-content .review-comments .comments-first .comments-container .account-container .img-account {
+    display: none;
 }
 
 .review .review-content .review-comments .comments-first .comments-container .comments-descr {
@@ -473,11 +585,11 @@ export default {
     color: #909090;
 }
 
-.review .review-content .review-comments .comments-container .comments-stars {
+.review .review-content .review-comments .comments-container .account-container .name-container .comments-stars {
     display: flex;
 }
 
-.review .review-content .review-comments .comments-container .comments-stars .comments-stars-title {
+.review .review-content .review-comments .comments-container .account-container .name-container .comments-stars .comments-stars-title {
     margin-left: 10px;
     font-size: 16px;
     font-weight: 300;
@@ -541,7 +653,7 @@ export default {
     color: #909090;
 }
 
-.review .review-content .review-comments .comments-first .comments-first__name {
+.review .review-content .review-comments .comments-first .comments-container .account-container .name-container .comments-first__name {
     font-weight: 500;
     font-size: 24px;
     color: #0A0A0A;
@@ -559,6 +671,10 @@ export default {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
+}
+
+.review .review-content .review-comments .comments-second .comments-container .account-container .comments-second-img-mf {
+    display: none;
 }
 
 .review .review-content .review-comments .comments-second .comments-container .comments-first__name {
@@ -716,5 +832,236 @@ export default {
     border: none;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) {
+    .review {
+        flex-direction: column;
+    }
+
+    .review .review__block-mf {
+        display: block;
+        width: 290px;
+        height: 289px;
+        border: 1px solid #EEEEEE;
+        border-radius: 5px;
+    }
+
+    .review .review__block-mf .block__container {
+        margin: 0 auto;
+        width: 260px;
+        height: 266px;
+    }
+
+    .review .review__block-mf .block__container .block__container-stars {
+        display: flex;
+        align-items: center;
+        margin-top: 21px;
+    }
+
+    .review .review__block-mf .block__container .block__container-stars .block-stars__item {
+        margin-left: 5px;
+    }
+
+    .review .review__block-mf .block__container .block__container-stars .block-stars__p {
+        margin-left: auto;
+        font-size: 22px;
+        color: #0A0A0A;
+        font-weight: 700;
+    }
+
+    .review .review__block-mf .block__container .block-line {
+        margin-top: 15px;
+        width: 263px;
+        height: 0px;
+        border: 1px solid #EEEEEE;
+        transform: rotate(0.05deg);
+    }
+
+    .review .review__block-mf .block__container .block__container-raiting {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 263px;
+        height: 135px;
+    }
+
+    .review .review__block-mf .block__container .block__container-item {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .review .review__block-mf .block__container .block__container-item p {
+        color: #909090;
+        font-size: 14px;
+    }
+
+    .review .review__block-mf .block__container .block__container-item .block__container-block {
+        width: 182px;
+        height: 10px;
+        background: #EEEEEE;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .review .review__block-mf .block__container .block__container-item .block__container-block .container-block__one {
+        width: 146px;
+        height: 10px;
+        background: #2F76FF;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .review .review__block-mf .block__container .block__container-item .block__container-block .container-block__two {
+        width: 63px;
+        height: 10px;
+        background: #2F76FF;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .review .review__block-mf .block__container .block__container-item .block__container-block .container-block__three {
+        width: 75px;
+        height: 10px;
+        background: #2F76FF;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .review .review__block-mf .block__container .block__container-item .block__container-block .container-block__four {
+        width: 14px;
+        height: 10px;
+        background: #2F76FF;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .review .review__block-mf .block__container .block__container-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        width: 100%;
+        height: 50px;
+        background: #2F76FF;
+        border-radius: 5px;
+        border: none;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .review .review-content {
+        width: 290px;
+        padding-top: 15px;
+    }
+
+    .review .review-content .review-title {
+        font-size: 20px;
+    }
+
+    .review hr {
+        display: none;
+    }
+
+    .review .review-content .option {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 40px;
+        padding-left: 11px;
+        color: #2f76ff;
+        border: 2px solid #EEEEEE;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    .review .review-content .review-carousel-buttons {
+        display: none;
+    }
+
+    .review .review-content .review-wrapper .review-carousel-container .review-carousel-track .review-carousel-item .review-carousel-item__img {
+        width: 75.94px;
+        height: 96.79px;
+        margin-left: 7px;
+    }
+
+    .review .review-content .review-wrapper .review-carousel-container .review-carousel-track .review-carousel-item .review-carousel-item__img img {
+        width: 100%;
+    }
+
+    .review .review-content .review-comments {
+        width: 290px;
+    }
+
+    .review .review-content .review-comments .comments-first {
+        width: auto;
+    }
+
+    .review .review-content .review-comments .comments-first img {
+        display: none;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container {
+        margin-left: 0;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .account-container {
+        display: flex;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .account-container .name-container {
+        margin-left: 10px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .account-container .img-account {
+        display: block;
+        width: 50px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .comments-descr {
+        width: auto;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .review-comments-img {
+        width: 290px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .review-comments-img img {
+        display: block;
+        margin-left: 3px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .review-comments-img img:first-child {
+        margin-left: 0;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .review-comments-img img:last-child {
+        display: none;
+    }
+
+    .review .review-content .review-comments .comments-second {
+        width: 100%;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-second-img {
+        display: none;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container {
+        margin-left: 0;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .account-container .comments-second-img-mf {
+        display: block;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .comments-descr {
+        width: 100%;
+    }
+
+    .review .review__block {
+        display: none;
+    }
 }
 </style>
