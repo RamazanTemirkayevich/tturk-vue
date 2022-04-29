@@ -603,7 +603,6 @@ export default {
     align-items: flex-start;
     margin-top: 15px;
     width: 361px;
-    height: 70px;
 }
 
 .review .review-content .review-comments .comments-container .review-comments-img img {
@@ -1072,6 +1071,41 @@ export default {
 
     .review .review__block {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .review .review__block-mf {
+        width: 100%;
+    }
+
+    .review .review__block-mf .block__container {
+        width: 320px;
+    }
+
+    .review .review-content {
+        width: 100%;
+    }
+
+    .review .review-content .review-title {
+        font-size: 22px;
+    }
+
+    .review .review-content .option {
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .review .review-content .review-wrapper .review-carousel-title {
+        font-size: 20px;
+    }
+
+    .review .review-content .review-comments {
+        width: 100%;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .review-comments-img img {
+        width: 62px;
     }
 }
 </style>

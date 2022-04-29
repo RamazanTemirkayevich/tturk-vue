@@ -403,4 +403,24 @@ export default {
   }
 
 }
+
+@media only screen and (min-width: 375px) {
+  .header .header-wrapper .top-nav {
+    width: 320px;
+  }
+
+  .header .header-wrapper .header__main .header__search {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .header .header-wrapper .top-nav {
+    width: 370px;
+  }
+
+  .header .header-wrapper .header__main .header__search {
+    width: 370px;
+  }
+}
 </style>

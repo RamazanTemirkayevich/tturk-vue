@@ -824,6 +824,12 @@ export default {
     }
 }
 
+@media only screen and (min-width: 375px) {
+    .carousel .carousel-descr .carousel-title {
+        font-size: 22px;
+    }
+}
+
 @media (max-width: 1440px) {
     .carousel .carousel-buttons .buttons-next {
         margin-left: 89em;

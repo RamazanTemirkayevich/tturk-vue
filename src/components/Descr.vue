@@ -196,11 +196,12 @@ export default {
 
 @media only screen and (min-width: 320px) {
     .description {
-        visibility: hidden;
+        display: none;
     }
 
     .descr-mf {
         max-width: 290px;
+        margin-top: 20px;
     }
 
     .descr-mf .descr-title .title-name {
@@ -230,7 +231,7 @@ export default {
     .descr-mf .line {
         margin-top: 20px;
         display: block;
-        width: 290px;
+        width: 100%;
         border: 1px solid #EEEEEE;
     }
 
@@ -260,6 +261,74 @@ export default {
 
     .descr-mf .characteristic p span, .toggle-chars p span {
         color: #0A0A0A;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .descr-mf {
+        max-width: 100%;
+    }
+
+    .descr-mf .descr-title .title-name {
+        font-size: 22px;
+    }
+
+    .descr-mf .descr-title .name-text {
+        font-size: 18px;
+    }
+
+    .descr-mf .descr-title .open-text {
+        width: 149px;
+        font-size: 18px;
+    }
+
+    .descr-mf .characteristic .char-name {
+        font-size: 22px;
+    }
+
+    .descr-mf .characteristic p {
+        font-size: 18px;
+    }
+
+    .descr-mf .characteristic p span, .toggle-chars p span {
+        font-size: 18px;
+    }
+
+    .descr-mf .characteristic .open-text {
+        width: 174px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    .descr-mf .descr-title .title-name {
+        font-size: 24px;
+    }
+
+    .descr-mf .descr-title .name-text {
+        font-size: 20px;
+    }
+
+    .descr-mf .descr-title .open-text {
+        width: 166px;
+        font-size: 20px;
+    }
+
+    .descr-mf .characteristic .char-name {
+        font-size: 24px;
+    }
+
+    .descr-mf .characteristic p {
+        font-size: 20px;
+    }
+
+    .descr-mf .characteristic p span, .toggle-chars p span {
+        font-size: 20px;
+    }
+
+    .descr-mf .characteristic .open-text {
+        width: 193px;
+        font-size: 20px;
     }
 }
 </style>

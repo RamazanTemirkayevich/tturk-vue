@@ -1,4 +1,9 @@
 <template>
+  <div class="main-img__container-mf">
+        <div class="main-img-mf">
+            <img src="@/assets/column_img/image44.png" alt="">
+        </div>
+  </div>
   <div class="container">
       <main class="promo">
             <div class="column-img">
@@ -9,6 +14,7 @@
                 <img class="img-item" src="@/assets/column_img/image44.png" alt="">
                 <img class="img-item" src="@/assets/column_img/image49.png" alt="">
             </div>
+
             <div class="main-img__container">
                 <div class="main-img">
                     <img src="@/assets/column_img/image44.png" alt="">
@@ -204,11 +210,14 @@ export default {
 </script>
 
 <style scoped>
+  .main-img__container-mf {
+       display: none;
+   }
+
   .promo {
        display: flex;
        margin-top: 27px;
        width: 100%;
-       height: 510px;
    }
 
   .promo .column-img {
@@ -236,7 +245,6 @@ export default {
    .promo .main-img__container .main-img {
         margin-left: 10px;
         width: 100%;
-        height: 510px;
         background: #2F76FF;
         background: center no-repeat;
         border: 2px solid #EEEEEE;
@@ -262,7 +270,6 @@ export default {
    .promo .promo-title {
        margin-left: 24px;
        width: 469px;
-       height: 398px;
    }
 
    .promo .promo-title .promo-color {
@@ -312,7 +319,6 @@ export default {
    .promo .promo-title .promo-size {
        max-width: 290px;
        width: 100%;
-       margin-top: 5px;
    }
 
    .promo .promo-title .promo-size .size-name {
@@ -609,6 +615,20 @@ export default {
    }
 
    @media only screen and (min-width: 320px) {
+       .main-img__container-mf {
+           display: block;
+       }
+
+        .main-img__container-mf .main-img-mf {
+           margin-left: 0;
+           width: 100%;
+           border: none;
+       }
+
+       .main-img__container-mf .main-img-mf img {
+           width: 100%;
+       }
+
        .promo {
            flex-direction: column;
            margin-top: 0;
@@ -619,19 +639,7 @@ export default {
        }
 
        .promo .main-img__container {
-           padding-left: 0;
-           padding-right: 0;
-       }
-
-        .promo .main-img__container .main-img {
-           margin-left: 0;
-           width: 100%;
-           height: 380px;
-           border: none;
-       }
-
-       .promo .main-img__container .main-img img {
-           width: 100%;
+           display: none;
        }
 
         .promo .promo-descr__mf {
@@ -737,7 +745,6 @@ export default {
             margin-left: 8px;
             margin-top: 10px;
             width: 51px;
-            height: 63px;
             border: 2px solid #EEEEEE;
             background: center no-repeat;
             box-sizing: border-box;
@@ -763,6 +770,7 @@ export default {
         }
 
         .promo .promo-title .promo-size .promo-choise__items {
+            margin-top: 10px;
             flex-wrap: wrap;
         }
 
@@ -776,7 +784,7 @@ export default {
         }
 
         .promo .promo-title .promo-amount, .promo-count, .promo-subtitle, .promo-btn  {
-            visibility: hidden;
+            display: none;
         }
 
         .promo .promo-title .promo-title__mf {
@@ -838,6 +846,14 @@ export default {
             border-bottom: 1px dashed #919191;
         }
 
+        .promo .promo-title .promo-count {
+            display: none;
+        }
+
+        .promo .promo-title .promo-subtitle {
+            display: none;
+        }
+
         .promo .promo-title .promo-subtitle-mf {
             margin-top: 20px;
             max-width: 290px;
@@ -864,9 +880,119 @@ export default {
         }
 
         .promo .block-price {
-            visibility: hidden;
+            display: none;
         }
    }
+
+    @media only screen and (min-width: 375px) {
+       .promo .promo-descr__mf {
+           width: 100%;
+       }
+
+       .promo .promo-descr__mf .descr-container {
+           width: 330px;
+       }
+
+       .promo .promo-color__mf {
+           max-width: 100%;
+       }
+
+       .promo .promo-color__mf .column-img__mf .img-item__mf {
+           width: 61px;
+       }
+
+       .promo .line-mf {
+           width: 100%;
+       }
+
+       .promo .promo-title {
+           width: 100%;
+       }
+
+       .promo .promo-title .promo-size {
+           max-width: 320px;
+           width: 100%;
+       }
+
+       .promo .promo-title .promo-title__mf {
+            margin-top: 20px;
+            max-width: 320px;
+            width: 100%;
+       }
+
+       .promo .promo-title .promo-title__mf {
+           max-width: 100%;
+       }
+
+       .promo .promo-title .promo-title__mf .promo-title__name h2 {
+           font-size: 22px;
+       }
+
+       .promo .promo-title .promo-title__mf .promo-title__descr .promo-raiting .reviews-number {
+           font-size: 18px;
+       }
+
+       .promo .promo-title .promo-title__mf .promo-title__descr p {
+           font-size: 18px;
+       }
+
+       .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div {
+           font-size: 18px;
+       }
+    }
+
+    @media only screen and (min-width: 414px) {
+       .promo .promo-descr__mf .descr-container {
+           width: 370px;
+       }
+
+       .promo .promo-descr__mf .descr-container .descr-last-btn {
+           height: 45px;
+           font-size: 18px;
+       }
+
+       .promo .promo-color__mf .column-img__mf .img-item__mf {
+           width: 71px;
+       }
+
+       .promo .line-mf {
+           width: 100%;
+       }
+
+       .promo .promo-title .promo-size {
+           max-width: 370px;
+       }
+
+       .promo .promo-title .promo-size .promo-choise__items .promo-choise {
+           width: 50px;
+           height: 50px;
+       }
+
+       .promo .promo-title .promo-size .promo-choise__items .six, .seven {
+           width: 60px;
+           height: 49px;
+       }
+
+       .promo .promo-title .promo-title__mf {
+            max-width: 370px;
+       }
+
+       .promo .promo-title .promo-title__mf .promo-title__name h2 {
+           font-size: 24px;
+       }
+
+       .promo .promo-title .promo-title__mf .promo-title__descr .promo-raiting .reviews-number {
+           font-size: 20px;
+       }
+
+       .promo .promo-title .promo-title__mf .promo-title__descr p {
+           font-size: 20px;
+       }
+
+       .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div {
+           font-size: 20px;
+       }
+    }
 
    @media (min-width: 2560px) {
        .promo .block-price {
