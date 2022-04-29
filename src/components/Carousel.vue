@@ -734,6 +734,10 @@ export default {
         padding-top: 20px;
     }
 
+    .carousel .carousel-descr {
+        width: 290px;
+    }
+
     .carousel .carousel-descr .carousel-title {
         font-size: 20px;
     }

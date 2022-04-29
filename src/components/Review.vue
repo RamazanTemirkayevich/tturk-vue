@@ -423,6 +423,7 @@ export default {
 </script>
 
 <style scoped>
+
 .review {
     display: flex;
     justify-content: space-between;
@@ -1052,8 +1053,17 @@ export default {
         margin-left: 0;
     }
 
+    .review .review-content .review-comments .comments-second .comments-container .account-container {
+        display: flex;
+    }
+
     .review .review-content .review-comments .comments-second .comments-container .account-container .comments-second-img-mf {
         display: block;
+        width: 50px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .account-container .name-container {
+        margin-left: 10px;
     }
 
     .review .review-content .review-comments .comments-second .comments-container .comments-descr {

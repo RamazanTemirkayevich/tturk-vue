@@ -30,63 +30,63 @@ export default {
 
 <style>
     @font-face {
-    font-family: "GT Eesti Pro Display";
-    src: url("fonts/GT\ Eesti\ Pro\ Display-Thin.woff2");
-    font-style: normal;
-    font-weight: 100;
+      font-family: "GT Eesti Pro Display";
+      src: url("fonts/GT\ Eesti\ Pro\ Display-Thin.woff2");
+      font-style: normal;
+      font-weight: 100;
     }
 
     @font-face {
-    font-family: "GT Eesti Pro Display";
-    src: url("fonts/GT\ Eesti\ Pro\ Display-Light.woff2");
-    font-style: normal;
-    font-weight: 200;
+      font-family: "GT Eesti Pro Display";
+      src: url("fonts/GT\ Eesti\ Pro\ Display-Light.woff2");
+      font-style: normal;
+      font-weight: 200;
     }
 
     @font-face {
-    font-family: "GT Eesti Pro Display";
-    src: url("fonts/GT\ Eesti\ Pro\ Display-Regular.woff2");
-    font-style: normal;
-    font-weight: 300;
+      font-family: "GT Eesti Pro Display";
+      src: url("fonts/GT\ Eesti\ Pro\ Display-Regular.woff2");
+      font-style: normal;
+      font-weight: 300;
     }
 
     @font-face {
-    font-family: "GT Eesti Pro Display";
-    src: url("fonts/GT\ Eesti\ Pro\ Display-Medium.woff2");
-    font-style: normal;
-    font-weight: 500;
+      font-family: "GT Eesti Pro Display";
+      src: url("fonts/GT\ Eesti\ Pro\ Display-Medium.woff2");
+      font-style: normal;
+      font-weight: 500;
     }
 
     @font-face {
-    font-family: "GT Eesti Pro Display";
-    src: url("fonts/GT\ Eesti\ Pro\ Display-Bold.woff2");
-    font-style: normal;
-    font-weight: 700;
+      font-family: "GT Eesti Pro Display";
+      src: url("fonts/GT\ Eesti\ Pro\ Display-Bold.woff2");
+      font-style: normal;
+      font-weight: 700;
     }
 
     * {
-    font-family: "GT Eesti Pro Display";
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
+      font-family: "GT Eesti Pro Display";
+      margin: 0;
+      padding: 0;
+      font-weight: 300;
     }
 
     h3 {
-    font-weight: 300;
+      font-weight: 300;
     }
 
     ul {
-    list-style: none;
+      list-style: none;
     }
 
     a {
-    text-decoration: none;
+      text-decoration: none;
     }
 
     .container {
-    padding-left: 115px;
-    padding-right: 115px;
-    max-width: calc(128rem + 40px);
+      padding-left: 115px;
+      padding-right: 115px;
+      /* max-width: calc(128rem + 40px); */
     }
 
     @media (min-width: 320px) {
@@ -96,10 +96,10 @@ export default {
       }
     }
 
-    @media (min-width: 2560px) {
+    /* @media (min-width: 2560px) {
       .container {
         padding-left: 215px;
         padding-right: 215px;
       }
-    }
+    } */
 </style>

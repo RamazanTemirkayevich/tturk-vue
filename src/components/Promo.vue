@@ -751,6 +751,7 @@ export default {
 
         .promo .promo-title {
             margin-left: 0;
+            width: 290px;
         }
 
         .promo .promo-title .promo-color {
