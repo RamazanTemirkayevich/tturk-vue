@@ -215,9 +215,15 @@ export default {
     border: 1px solid #EEEEEE;
   }
 
-  @media (min-width: 320px) {
+  @media only screen and (min-width: 320px) {
     .subheader {
       display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .subheader {
+      display: block;
     }
   }
 </style>

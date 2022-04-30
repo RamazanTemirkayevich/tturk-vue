@@ -5,6 +5,7 @@
   <Descr />
   <Carousel />
   <Review />
+  <Footer />
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import Promo from './components/Promo.vue'
 import Descr from './components/Descr.vue'
 import Carousel from './components/Carousel.vue'
 import Review from './components/Review.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
@@ -23,7 +25,8 @@ export default {
     Promo,
     Descr,
     Carousel,
-    Review
+    Review,
+    Footer
   }
 }
 </script>
@@ -89,10 +92,17 @@ export default {
       /* max-width: calc(128rem + 40px); */
     }
 
-    @media (min-width: 320px) {
+    @media only screen and (min-width: 320px) {
       .container {
         padding-left: 10px;
         padding-right: 10px;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
       }
     }
 

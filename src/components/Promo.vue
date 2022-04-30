@@ -235,10 +235,7 @@ export default {
        margin-bottom: 8px;
        width: 51px;
        height: 63px;
-       border: 2px solid #EEEEEE;
        background: center no-repeat;
-       box-sizing: border-box;
-       border-radius: 3px;
        cursor: pointer;
    }
 
@@ -247,9 +244,6 @@ export default {
         width: 100%;
         background: #2F76FF;
         background: center no-repeat;
-        border: 2px solid #EEEEEE;
-        box-sizing: border-box;
-        border-radius: 5px;
         cursor: pointer;
    }
 
@@ -994,9 +988,235 @@ export default {
        }
     }
 
-   @media (min-width: 2560px) {
-       .promo .block-price {
-           margin-left: auto;
-       }
-   }
+    @media only screen and (min-width: 768px) {
+        .promo {
+            margin-top: 15px;
+        }
+
+        .promo .main-img__container {
+            display: none;
+        }
+
+        .promo .main-img__container .main-img {
+            margin-left: 0;
+        }
+
+        .promo .main-img__container .main-img img {
+            background: #EEEEEE;
+            border: 2px solid #EEEEEE;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .promo .promo-descr__mf {
+            display: none;
+        }
+
+        .promo .promo-color__mf {
+            margin-top: 10px;
+        }
+
+        .promo .promo-color__mf .column-img__mf .img-item__mf {
+            width: 142px;
+        }
+
+        .promo .promo-title .promo-size {
+            max-width: 700px;
+        }
+
+        .promo .promo-title .promo-size .size-name {
+            font-size: 22px;
+        }
+
+        .promo .promo-title .promo-size .promo-choise__items .promo-choise {
+            width: 70px;
+            height: 70px;
+        }
+
+        .promo .promo-title .promo-size .promo-choise__items .promo-choise span {
+            font-size: 22px;
+        }
+
+        .promo .promo-title .promo-size .promo-choise__items .seven {
+            margin-left: 8px;
+            margin-top: 0;
+        }
+
+        .promo .promo-title .promo-title__mf {
+            max-width: 700px;
+        }
+
+        .promo .promo-title .promo-title__mf .promo-title__name h2 {
+            font-size: 30px;
+        }
+
+        .promo .promo-title .promo-title__mf .promo-title__name .promo-title__name-img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .promo .promo-title .promo-title__mf .promo-title__name .promo-title__name-img img {
+            width: 66px;
+            height: 44px;
+        }
+
+        .promo .promo-title .promo-title__mf .promo-title__descr {
+            padding-top: 0;
+            height: 80px;
+        }
+
+        .promo .promo-title .promo-title__mf .promo-title__descr .promo-raiting .reviews-number {
+            font-size: 22px;
+        }
+
+        .promo .promo-title .promo-title__mf .promo-title__descr p {
+            font-size: 22px;
+        }
+
+        .promo .promo-title .promo-subtitle-mf {
+            max-width: 700px;
+            height: 90px;
+        }
+
+        .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div {
+            font-size: 22px;
+        }
+
+        .descr-mf .descr-title .title-name {
+            font-size: 26px;
+        }
+
+        .descr-mf .descr-title .name-text {
+            font-size: 22px;
+        }
+
+        .descr-mf .descr-title .open-text {
+            width: 182px;
+            font-size: 22px;
+        }
+
+        .descr-mf .characteristic .char-name {
+            font-size: 26px;
+        }
+
+        .descr-mf .characteristic p {
+            font-size: 22px;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        .main-img__container-mf {
+            display: none;
+        }
+
+        .promo {
+            flex-direction: row;
+        }
+
+        .promo .column-img {
+            display: flex;
+        }
+
+        .promo .main-img__container {
+            display: block;
+        }
+
+        .promo .main-img__container .main-img {
+            margin-left: 10px;
+        }
+
+        .promo .promo-color__mf {
+            display: none;
+        }
+
+        .promo .line-mf {
+            display: none;
+        }
+
+        .promo .promo-title {
+            margin-left: 24px;
+            width: 215px;
+        }
+
+        .promo .promo-title .promo-color {
+            font-size: 18px;
+            display: block;
+        }
+
+        .promo .promo-title .size-photo {
+            display: flex;
+        }
+
+        .promo .promo-title .promo-size {
+            max-width: 290px;
+            width: 100%;
+        }
+
+        .promo .promo-title .promo-size .size-name {
+            margin-top: 18px;
+            font-size: 18px;
+            color: #626262;
+        }
+
+        .promo .promo-title .promo-size .promo-choise__items {
+            margin-top: 0;
+            flex-wrap: wrap;
+        }
+
+        .promo .promo-title .promo-size .promo-choise__items .promo-choise {
+            margin-left: 0;
+            width: 49px;
+            height: 39px;
+        }
+
+        .promo .promo-title .promo-size .promo-choise__items .promo-choise span {
+            font-size: 16px;
+        }
+
+        .promo .promo-title .promo-title__mf {
+            display: none;
+        }
+
+        .promo .promo-title .promo-subtitle-mf {
+            display: none;
+        }
+
+        .promo .promo-title .promo-amount {
+            display: block;
+        }
+
+        .promo .promo-title .promo-count {
+            display: flex;
+        }
+
+        .promo .promo-title .promo-subtitle {
+            display: flex;
+            width: 194px;
+        }
+
+        .promo .promo-title .promo-subtitle .promo-subtitle-table {
+            margin-left: 3px;
+        }
+
+        .promo .promo-title .promo-btn {
+            display: block;
+            width: 200px;
+        }
+
+        .promo .block-price {
+            display: flex;
+        }
+
+        .promo .block-price .promo-descr {
+            width: 270px;
+        }
+
+        .promo .block-price .promo-descr .descr-container {
+            width: 230px;
+        }
+
+        .promo .promo-sub-descr {
+            width: 270px;
+        }
+    }
 </style>

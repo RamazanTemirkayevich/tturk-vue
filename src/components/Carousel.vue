@@ -594,7 +594,6 @@ export default {
 <style scoped>
 .carousel {
     width: 100%;
-    height: 392px;
 }
 
 .carousel .carousel-descr {
@@ -650,7 +649,6 @@ export default {
 
 .carousel .carousel-wrapper {
     margin-top: 15px;
-    width: 1200px;
 }
 
 .carousel .carousel-wrapper .carousel-container {
@@ -664,7 +662,6 @@ export default {
 
 .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item {
     width: 187px;
-    height: 385px;
 }
 
 .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item span {
@@ -830,18 +827,31 @@ export default {
     }
 }
 
-@media (max-width: 1440px) {
-    .carousel .carousel-buttons .buttons-next {
-        margin-left: 89em;
+@media only screen and (min-width: 768px) {
+    .carousel .carousel-descr .carousel-title {
+        font-size: 24px;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item span {
+        font-size: 22px;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item span .old-price-mf {
+        font-size: 14px;
+    }
+
+    .carousel .carousel-wrapper .carousel-container .carousel-track .carousel-item p {
+        font-size: 16px;
+    }
+
+    .carousel .line {
+        width: 100%;
     }
 }
 
-@media (max-width: 2560px) {
-    .carousel .carousel-buttons .buttons-next {
-        margin-left: 156em;
-    }
-    .carousel .carousel-wrapper {
-        width: 100%;
+@media only screen and (min-width: 1024px) {
+    .carousel .line {
+        display: none;
     }
 }
 </style>

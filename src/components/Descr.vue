@@ -144,7 +144,6 @@ export default {
 
 .description .description-text {
     margin-top: 25px;
-    width: 1100px;
     font-size: 20px;
     font-weight: 200;
     color: #404040;
@@ -162,14 +161,14 @@ export default {
 .description .descr-container {
     display: flex;
     margin-top: 25px;
-    width: 1064px;
     height: 295px;
 }
 
 .description .descr-container .descr-container-box {
     display: flex;
     align-items: flex-start;
-    width: 1064px;
+    justify-content: space-between;
+    width: 100%;
     height: 238px;
 }
 
@@ -178,10 +177,6 @@ export default {
     flex-direction: column;
     width: 482px;
     height: 238px;
-}
-
-.description .descr-container .descr-container-box .descr-container-block:last-child {
-    margin-left: 100px;
 }
 
 .description .descr-container .descr-container-box .descr-container-block .descr-container-item {
@@ -329,6 +324,16 @@ export default {
     .descr-mf .characteristic .open-text {
         width: 193px;
         font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .description {
+        display: block;
+    }
+
+    .descr-mf {
+        display: none;
     }
 }
 </style>

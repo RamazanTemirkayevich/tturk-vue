@@ -88,13 +88,15 @@
                 </div>
             </div>
             <div class="review-content">
-                <h2 class="review-title">Reviews and ratings <span>(25)</span></h2>
-                <hr>
-                <select class="option" name="" id="">
-                    <option value="">Helpful first</option>
-                    <option value="">Lorem</option>
-                    <option value="">Lorem</option>
-                </select>
+                <div class="title-container">
+                    <h2 class="review-title">Reviews and ratings <span>(25)</span></h2>
+                    <select class="option" name="" id="">
+                        <option value="">Helpful first</option>
+                        <option value="">Lorem</option>
+                        <option value="">Lorem</option>
+                    </select>
+                </div>
+                <hr class="review-line">
                 <div class="review-carousel-buttons">
                     <button class="carousel-buttons__prev">
                         <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,6 +161,9 @@
                     </div>
                 </div>
                 <hr class="review-line">
+                <div class="last-container">
+                    
+                </div>
                 <div class="review-comments">
                     <div class="comments-first">
                         <img src="@/assets/account1.png" alt="">
@@ -325,91 +330,91 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="review__block">
-                <div class="block__container">
-                    <div class="block__container-stars">
-                        <div class="block-stars__item active">
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
-                                    fill="#FAB82B" />
-                            </svg>
+                <div class="review__block">
+                    <div class="block__container">
+                        <div class="block__container-stars">
+                            <div class="block-stars__item active">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
+                                        fill="#FAB82B" />
+                                </svg>
+                            </div>
+                            <div class="block-stars__item active">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
+                                        fill="#FAB82B" />
+                                </svg>
+                            </div>
+                            <div class="block-stars__item active">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
+                                        fill="#FAB82B" />
+                                </svg>
+                            </div>
+                            <div class="block-stars__item">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
+                                        fill="#FAB82B" />
+                                </svg>
+                            </div>
+                            <div class="block-stars__item">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25.75 9.65897L16.6661 9.06176L13.245 0.467224L9.82397 9.06176L0.75 9.65897L7.70967 15.5684L5.42588 24.5327L13.245 19.5903L21.0642 24.5327L18.7804 15.5684L25.75 9.65897Z"
+                                        fill="#CDCDCD" />
+                                </svg>
+                            </div>
+                            <p class="block-stars__p">4.5 / 5</p>
                         </div>
-                        <div class="block-stars__item active">
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
-                                    fill="#FAB82B" />
-                            </svg>
+                        <hr class="block-line">
+                        <div class="block__container-raiting">
+                            <div class="block__container-item">
+                                <p>5 stars</p>
+                                <div class="block__container-block">
+                                    <div class="container-block__one"></div>
+                                </div>
+                                <span>15</span>
+                            </div>
+                            <div class="block__container-item">
+                                <p>4 stars</p>
+                                <div class="block__container-block">
+                                    <div class="container-block__two"></div>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="block__container-item">
+                                <p>3 stars</p>
+                                <div class="block__container-block">
+                                    <div class="container-block__three"></div>
+                                </div>
+                                <span>5</span>
+                            </div>
+                            <div class="block__container-item">
+                                <p>2 stars</p>
+                                <div class="block__container-block">
+                                    <div class="container-block__four"></div>
+                                </div>
+                                <span>2</span>
+                            </div>
+                            <div class="block__container-item">
+                                <p>1 star</p>
+                                <div class="block__container-block">
+                                    <div class="container-block__five"></div>
+                            </div>
+                            <span>0</span>
                         </div>
-                        <div class="block-stars__item active">
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
-                                    fill="#FAB82B" />
-                            </svg>
-                        </div>
-                        <div class="block-stars__item">
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M25 9.65897L15.9161 9.06176L12.495 0.467224L9.07397 9.06176L0 9.65897L6.95967 15.5684L4.67588 24.5327L12.495 19.5903L20.3142 24.5327L18.0304 15.5684L25 9.65897Z"
-                                    fill="#FAB82B" />
-                            </svg>
-                        </div>
-                        <div class="block-stars__item">
-                            <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M25.75 9.65897L16.6661 9.06176L13.245 0.467224L9.82397 9.06176L0.75 9.65897L7.70967 15.5684L5.42588 24.5327L13.245 19.5903L21.0642 24.5327L18.7804 15.5684L25.75 9.65897Z"
-                                    fill="#CDCDCD" />
-                            </svg>
-                        </div>
-                        <p class="block-stars__p">4.5 / 5</p>
                     </div>
-                    <hr class="block-line">
-                    <div class="block__container-raiting">
-                        <div class="block__container-item">
-                            <p>5 stars</p>
-                            <div class="block__container-block">
-                                <div class="container-block__one"></div>
-                            </div>
-                            <span>15</span>
-                        </div>
-                        <div class="block__container-item">
-                            <p>4 stars</p>
-                            <div class="block__container-block">
-                                <div class="container-block__two"></div>
-                            </div>
-                            <span>4</span>
-                        </div>
-                        <div class="block__container-item">
-                            <p>3 stars</p>
-                            <div class="block__container-block">
-                                <div class="container-block__three"></div>
-                            </div>
-                            <span>5</span>
-                        </div>
-                        <div class="block__container-item">
-                            <p>2 stars</p>
-                            <div class="block__container-block">
-                                <div class="container-block__four"></div>
-                            </div>
-                            <span>2</span>
-                        </div>
-                        <div class="block__container-item">
-                            <p>1 star</p>
-                            <div class="block__container-block">
-                                <div class="container-block__five"></div>
-                           </div>
-                           <span>0</span>
-                      </div>
-                </div>
-                    <button class="block__container-btn" id="open">Write a review</button>
+                        <button class="block__container-btn" id="open">Write a review</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -437,29 +442,24 @@ export default {
 
 .review .review-content {
     width: 725px;
-    height: 903px;
 }
 
-.review .review-content .review-title {
+.review .review-content .title-container .review-title {
     font-weight: 500;
     font-size: 28px;
     color: #0A0A0A;
 }
 
-.review .review-content .review-title span {
+.review .review-content .title-container .review-title span {
     color: #909090;
 }
 
-.review .review-content hr {
+.review .review-content .title-container hr {
     margin-top: 10px;
     width: 100%;
     height: 0px;
     border: 1px solid #EEEEEE;
     transform: rotate(0.05deg);
-}
-
-.review .review-content .option {
-    display: none;
 }
 
 .review .review-content .review-carousel-buttons {
@@ -532,8 +532,8 @@ export default {
 }
 
 .review .review-content .review-line {
-    margin-top: 25px;
-    width: 850px;
+    margin-top: 10px;
+    width: 100%;
     height: 0px;
     border: 1px solid #EEEEEE;
     transform: rotate(0.05deg);
@@ -545,7 +545,6 @@ export default {
     align-items: center;
     margin-top: 25px;
     width: 725px;
-    height: 557px;
 }
 
 .review .review-content .review-comments .comments-first {
@@ -664,7 +663,6 @@ export default {
     align-items: flex-start;
     margin-top: 25px;
     width: 850px;
-    height: 364px;
 }
 
 .review .review-content .review-comments .comments-second .comments-container {
@@ -1106,6 +1104,127 @@ export default {
 
     .review .review-content .review-comments .comments-first .comments-container .review-comments-img img {
         width: 62px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .review .review__block-mf {
+        margin: auto;
+        width: 400px;
+    }
+
+    .review .review-content .title-container .review-title {
+        font-size: 24px;
+    }
+
+    .review .review-content .title-container .option {
+        font-size: 20px;
+    }
+
+    .review .review-content .review-wrapper .review-carousel-title {
+        font-size: 22px;
+    }
+
+    .review .review-content .review-wrapper .review-carousel-container .review-carousel-track .review-carousel-item .review-carousel-item__img {
+        width: 85.94px;
+        height: 106.79px;
+    }
+
+    .review .review-content .review-wrapper .review-carousel-container .review-carousel-track .review-carousel-item .review-carousel-item__img img {
+        width: 93%;
+        border-radius: 5px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .account-container .img-account {
+        width: 60px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .comments-descr p {
+        font-size: 22px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .comments-descr span {
+        font-size: 22px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .review-comments-img img {
+        width: 95px;
+    }
+
+    .review .review-content .review-comments .comments-container .comments-reaction {
+        width: 130px;
+    }
+
+    .review .review-content .review-comments .comments-container .comments-reaction .reaction__like {
+        width: 60px;
+        height: 35px;
+    }
+
+    .review .review-content .review-comments .comments-container .comments-reaction .reaction__like span {
+        font-size: 16px;
+    }
+
+    .review .review-content .review-comments .comments-container .comments-reaction .reaction__dislike {
+        width: 60px;
+        height: 35px;
+    }
+
+    .review .review-content .review-comments .comments-container .comments-reaction .reaction__dislike span {
+        font-size: 16px;
+    }
+
+    .review .review-content .review-comments .comments-second {
+        height: 230px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .account-container .comments-second-img-mf {
+        width: 60px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .comments-descr .comments-descr__three {
+        font-size: 22px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .comments-reaction-second {
+        width: 130px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .comments-reaction-second .reaction__dislike {
+        width: 60px;
+        height: 35px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .comments-reaction-second .reaction__dislike span {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .review {
+        margin-top: 0;
+    }
+
+    .review .review__block-mf {
+        display: none;
+    }
+
+    .review .review-content .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .review .review-content .title-container .option {
+        width: 200px;
+    }
+
+    .review .review-content .review-line {
+        display: block;
+    }
+
+    .review .review-content .review-wrapper .review-carousel-container .review-carousel-track .review-carousel-item .review-carousel-item__img {
+        width: 114px;
+        height: 144px;
     }
 }
 </style>
