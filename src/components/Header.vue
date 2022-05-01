@@ -509,7 +509,7 @@ export default {
 
   .header .header-wrapper .header__main {
     margin-top: 14px;
-    justify-content: unset;
+    justify-content: center;
   }
 
   .header .header-wrapper .header__main .header__button {

@@ -1,6 +1,21 @@
 <template>
   <div class="main-img__container-mf">
         <div class="main-img-mf">
+            <div class="function-container">
+                <div class="img-mf-back">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 6.16656H3.345L7.75583 1.75573L6.5775 0.577393L0.154999 6.99989L6.5775 13.4224L7.75583 12.2441L3.345 7.83323H15.5V6.16656Z" fill="#404040"/>
+                    </svg>
+                </div>
+                <div class="img-mf-like">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5408 1.7357C17.5543 0.616406 16.1859 0 14.6875 0C12.5802 0 11.246 1.25859 10.4979 2.31445C10.3038 2.58844 10.1386 2.86316 10 3.12168C9.86137 2.86316 9.69629 2.58844 9.50215 2.31445C8.75402 1.25859 7.41984 0 5.3125 0C3.81414 0 2.44566 0.616446 1.45918 1.73574C0.518242 2.80348 0 4.23348 0 5.76231C0 7.42649 0.649727 8.97434 2.04473 10.6334C3.29148 12.1162 5.08512 13.6446 7.16211 15.4145C7.93605 16.0741 8.73641 16.7561 9.58848 17.5016L9.61406 17.524C9.72453 17.6207 9.86227 17.6691 10 17.6691C10.1377 17.6691 10.2755 17.6207 10.3859 17.524L10.4115 17.5016C11.2636 16.7561 12.0639 16.0741 12.838 15.4145C14.9149 13.6447 16.7085 12.1163 17.9553 10.6334C19.3503 8.9743 20 7.42649 20 5.76231C20 4.23348 19.4818 2.80348 18.5408 1.7357ZM12.0779 14.5226C11.4107 15.0911 10.724 15.6762 10 16.3056C9.27602 15.6763 8.58934 15.0911 7.92203 14.5225C3.85723 11.0587 1.17188 8.77039 1.17188 5.76231C1.17188 4.51895 1.58613 3.3641 2.33836 2.51055C3.09922 1.64731 4.15543 1.17188 5.3125 1.17188C6.9191 1.17188 7.95766 2.16164 8.54594 2.99195C9.07363 3.73664 9.34898 4.48734 9.44289 4.77551C9.52145 5.01672 9.74633 5.17996 10 5.17996C10.2537 5.17996 10.4786 5.01672 10.5571 4.77551C10.651 4.48734 10.9264 3.73664 11.4541 2.99191C12.0423 2.16164 13.0809 1.17188 14.6875 1.17188C15.8446 1.17188 16.9008 1.64731 17.6616 2.51055C18.4139 3.3641 18.8281 4.51895 18.8281 5.76231C18.8281 8.77039 16.1428 11.0587 12.0779 14.5226Z" fill="#404040"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="img-mf-index">
+                <span>1/4</span>
+            </div>
             <img src="@/assets/column_img/image44.png" alt="">
         </div>
   </div>
@@ -617,9 +632,51 @@ export default {
        }
 
         .main-img__container-mf .main-img-mf {
+           position: relative; 
            margin-left: 0;
            width: 100%;
            border: none;
+       }
+
+       .main-img__container-mf .main-img-mf .img-mf-back {
+           position: absolute;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin-top: 15px;
+           margin-left: 15px;
+           width: 30px;
+           height: 30px;
+           background: #FAFAFA;
+           border-radius: 5px;
+           z-index: 1;
+       }
+
+       .main-img__container-mf .main-img-mf .img-mf-like {
+           position: absolute;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin-top: 15px;
+           margin-left: 17em;
+           width: 30px;
+           height: 30px;
+           background: #FAFAFA;
+           border-radius: 5px;
+           z-index: 1;
+       }
+
+       .main-img__container-mf .main-img-mf .img-mf-index {
+           position: absolute;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin-top: 23em;
+           margin-left: 15px;
+           width: 42px;
+           height: 26px;
+           background: #FFFFFF;
+           border-radius: 50px;
        }
 
        .main-img__container-mf .main-img-mf img {
@@ -676,7 +733,7 @@ export default {
             font-size: 26px;
             font-weight: 500;
             color: #CDCDCD;
-            text-decoration: line-through;
+            text-decoration: line-through #FF3157;
         }
 
         .promo .promo-descr__mf .descr-container .price-title-second {

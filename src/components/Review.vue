@@ -450,7 +450,6 @@ export default {
 
 .review .review-content .title-container .review-title {
     font-weight: 500;
-    font-size: 28px;
     color: #0A0A0A;
 }
 
