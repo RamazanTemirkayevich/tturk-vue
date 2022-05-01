@@ -1252,4 +1252,28 @@ export default {
         width: 70px;
     }
 }
+
+@media only screen and (min-width: 1440px) {
+    .review {
+        margin-top: 75px;
+    }
+
+    .review .review-content .last-container {
+        width: 850px;
+    }
+
+    .review .review-content .title-container .review-title {
+        font-size: 28px;
+    }
+
+    .review .review-content .title-container .option {
+        width: 240px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .review .review-content .review-wrapper {
+        margin-top: 25px;
+    }
+}
 </style>

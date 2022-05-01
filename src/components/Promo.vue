@@ -1280,12 +1280,41 @@ export default {
             margin-left: 0;
         }
 
+        .promo .promo-title .promo-btn {
+            width: 260px;
+        }
+
         .promo .block-price .promo-descr {
             width: 300px;
         }
 
         .promo .block-price .promo-descr .descr-container {
             width: 260px;
+        }
+
+        .promo .promo-sub-descr .sub-descr-container .sub-descr-name {
+            margin-top: 10px;
+        }
+
+        .promo .promo-sub-descr .sub-descr-container .sub-descr-stars {
+            align-items: center;
+        }
+
+        .promo .promo-sub-descr .sub-descr-container .sub-descr-stars .subheader__star.active:nth-child(1) {
+            margin-left: 0;
+        }
+
+        .promo .promo-sub-descr .sub-descr-container .sub-descr-stars .subheader__star.active {
+            margin-left: 2.81px;
+        }
+
+        .promo .promo-sub-descr .sub-descr-container .sub-descr-stars .subheader__star {
+            margin-left: 2.81px;
+        }
+
+        .promo .promo-sub-descr .sub-descr-container .sub-descr-stars .subheader__subtitle-p {
+            margin-left: 5px;
+            color: #626262;
         }
     }
 </style>

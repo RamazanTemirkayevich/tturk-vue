@@ -336,4 +336,18 @@ export default {
         display: none;
     }
 }
+
+@media only screen and (min-width: 1440px) {
+    .description .description-text {
+        width: 1200px;
+    }
+
+    .description .descr-container {
+        width: 1064px;
+    }
+
+    .description .descr-container .descr-container-box .descr-container-block {
+        justify-content: space-between;
+    }
+}
 </style>

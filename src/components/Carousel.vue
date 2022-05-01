@@ -854,4 +854,22 @@ export default {
         display: none;
     }
 }
+
+@media only screen and (min-width: 1440px) {
+    .carousel .carousel-descr {
+        width: 995px;
+    }
+
+    .carousel .carousel-descr .carousel-p {
+        display: block;
+    }
+
+    .carousel .carousel-buttons {
+        display: block;
+    }
+
+    .carousel .carousel-buttons .buttons-next {
+        margin-left: 96em;
+    }
+}
 </style>
