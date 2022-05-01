@@ -162,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="review-line">
+                    <hr class="review-line-second">
 
                     <div class="review-comments">
                         <div class="comments-first">
@@ -252,14 +252,14 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="review__line">
+                        <hr class="review-line-thirty">
                         <div class="comments-second">
                             <img class="comments-second-img" src="@/assets/account2.png" alt="">
                             <div class="comments-container">
                                 <div class="account-container">
                                     <img class="comments-second-img-mf" src="@/assets/account2.png" alt="">
                                     <div class="name-container">
-                                        <h2 class="comments-first__name">Jack S.</h2>
+                                        <h2 class="comments-first__name">Marry J.</h2>
                                         <div class="comments-stars">
                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1222,7 +1222,7 @@ export default {
     }
 
     .review .review-content .review__block {
-        display: block;
+        display: flex;
     }
 
     .review .review-content .title-container {
@@ -1262,6 +1262,10 @@ export default {
         width: 850px;
     }
 
+    .review .review-content .last-container .review-line {
+        margin-top: 10px;
+    }
+
     .review .review-content .title-container .review-title {
         font-size: 28px;
     }
@@ -1274,6 +1278,159 @@ export default {
 
     .review .review-content .review-wrapper {
         margin-top: 25px;
+    }
+
+    .review .review-content .review-line-second {
+        display: block;
+        margin-top: 25px;
+        width: 100%;
+        height: 0px;
+        border: 1px solid #EEEEEE;
+        transform: rotate(0.05deg);
+    }
+
+    .review .review-content .review-comments .comments-first img {
+        display: block;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .account-container .img-account {
+        display: none;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .account-container .name-container {
+        margin-left: 15px;
+    }
+
+    .review .review-content .review-comments .comments-container .account-container .name-container .comments-stars .comments-stars-title {
+        font-size: 18px;
+    }
+
+    .review .review-content .review-comments .comments-container .account-container .name-container .comments-stars {
+        margin-top: 5px;
+    }
+
+    .review .review-content .review-comments .comments-container .account-container .name-container .comments-stars svg {
+        width: 18.58px;
+        height: 17.78px;
+    }
+
+    .review .review-content .review-comments .comments-first {
+        width: 100%;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .comments-descr {
+        margin-left: 15px;
+        width: 704px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .comments-descr p {
+        font-size: 18px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .comments-descr p span {
+        font-size: 18px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .review-comments-img {
+        display: flex;
+        justify-content: space-between;
+        width: 290px;
+        margin-left: 15px;
+        width: 361px;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .review-comments-img img:last-child {
+        display: block;
+    }
+
+    .review .review-content .review-comments .comments-first .comments-container .review-comments-img img {
+        margin-left: 5px;
+        width: 56px;
+    }
+
+    .review .review-content .review-comments .comments-container .comments-reaction {
+        width: 103px;
+        margin-left: 15px;
+    }
+
+    .review .review-content .review-comments .comments-container .comments-reaction .reaction__like {
+        width: 48px;
+        height: 29px;
+    }
+
+    .review .review-content .review-comments .comments-container .comments-reaction .reaction__dislike {
+        width: 48px;
+        height: 29px;
+    }
+
+    .review .review-content .review-comments .review-line-thirty {
+        display: block;
+        margin-top: 15px;
+        width: 100%;
+        height: 0px;
+        border: 1px solid #EEEEEE;
+        transform: rotate(0.05deg);
+    }
+
+    .review .review__block {
+        align-items: center;
+        width: 300px;
+        height: 309px;
+    }
+
+    .review .review__block .block__container {
+        width: 263px;
+    }
+
+    .review .review__block .block__container .block__container-stars {
+        margin-top: 0;
+    }
+
+    .review .review__block .block__container .block-line {
+        display: block;
+    }
+
+    .review .review__block .block__container .block__container-raiting {
+        justify-content: space-between;
+        margin-top: 19.76px;
+    }
+
+    .review .review__block .block__container .block__container-item p {
+        font-size: 16px;
+    }
+
+    .review .review__block .block__container .block__container-btn {
+        margin-top: 20px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-second-img {
+        display: block;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .account-container .comments-second-img-mf {
+        display: none;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .account-container .name-container {
+        margin-left: 15px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .comments-descr {
+        margin-left: 15px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .comments-descr .comments-descr__three {
+        font-size: 18px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .comments-reaction-second {
+        margin-left: 15px;
+        width: 105px;
+    }
+
+    .review .review-content .review-comments .comments-second .comments-container .comments-reaction-second .reaction__dislike {
+        width: 50px;
+        height: 29px;
     }
 }
 </style>

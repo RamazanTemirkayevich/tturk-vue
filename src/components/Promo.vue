@@ -524,7 +524,7 @@ export default {
        font-size: 26px;
        font-weight: 500;
        color: #CDCDCD;
-       text-decoration: line-through;
+       text-decoration: line-through #FF3157;
    }
 
    .promo .block-price .promo-descr .descr-container .price-title-second {

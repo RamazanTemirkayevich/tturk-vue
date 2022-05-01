@@ -225,6 +225,10 @@ export default {
     .subheader {
       display: block;
     }
+
+    .subheader .subheader__product .subheader__subtitle {
+      width: 100%;
+    }
   }
 
   @media only screen and (min-width: 1440px) {

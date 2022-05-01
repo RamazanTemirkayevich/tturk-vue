@@ -34,7 +34,7 @@
           <li class="nav-item">
             <div class="dropdown-currency">
               <select class="dropdown-select" name="" id="">
-                <option value="">USD</option>
+                <option value="">$ USD</option>
                 <option value="">TRY</option>
                 <option value="">RUB</option>
               </select>
@@ -453,6 +453,13 @@ export default {
 
   .header .header-wrapper .admin {
     display: flex;
+    width: 195px;
+  }
+
+  .header .header-wrapper .admin .admin-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -485,7 +492,7 @@ export default {
   .header {
     height: 110px;
   }
-  
+
   .header .header-wrapper {
     padding-left: 78px;
     padding-right: 78px;
