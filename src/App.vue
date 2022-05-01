@@ -101,8 +101,8 @@ export default {
 
     @media only screen and (min-width: 1024px) {
       .container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 69px;
+        padding-right: 69px;
       }
     }
 

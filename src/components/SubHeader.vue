@@ -100,8 +100,7 @@ export default {
 
 <style scoped>
   .subheader {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 29px;
   }
 
   .subheader .subheader-head {
@@ -153,7 +152,7 @@ export default {
   }
 
   .subheader .subheader-head .subheader-menu .subheader-menu__list .subheader-menu__item a {
-    color: #0a0a0a;
+    color: #909090;
   }
 
   .subheader .subheader__product {
@@ -168,7 +167,8 @@ export default {
   .subheader .subheader__product .subheader__subtitle {
     display: flex;
     align-items: center;
-    margin-top: 14px;
+    margin-top: 10px;
+    width: 1279px;
   }
 
   .subheader .subheader__product .subheader__subtitle .subheader__star:hover {
@@ -224,6 +224,12 @@ export default {
   @media only screen and (min-width: 1024px) {
     .subheader {
       display: block;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .subheader .subheader-head .subheader-menu .subheader-menu__list .subheader-menu__item a {
+      color: #909090;
     }
   }
 </style>

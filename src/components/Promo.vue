@@ -231,12 +231,15 @@ export default {
        transition: 0.7s;
    }
 
-   .promo .img-item {
+   .promo .column-img .img-item {
        margin-bottom: 8px;
        width: 51px;
        height: 63px;
        background: center no-repeat;
        cursor: pointer;
+       border: 2px solid #EEEEEE;
+       box-sizing: border-box;
+       border-radius: 5px;
    }
 
    .promo .main-img__container .main-img {
@@ -1134,8 +1137,8 @@ export default {
         }
 
         .promo .promo-title {
-            margin-left: 24px;
-            width: 215px;
+            margin-left: 6px;
+            width: 32%;
         }
 
         .promo .promo-title .promo-color {
@@ -1148,7 +1151,6 @@ export default {
         }
 
         .promo .promo-title .promo-size {
-            max-width: 290px;
             width: 100%;
         }
 
@@ -1164,13 +1166,23 @@ export default {
         }
 
         .promo .promo-title .promo-size .promo-choise__items .promo-choise {
-            margin-left: 0;
-            width: 49px;
+            margin-left: 10px;
+            width: 39px;
             height: 39px;
         }
 
         .promo .promo-title .promo-size .promo-choise__items .promo-choise span {
             font-size: 16px;
+        }
+
+        .promo .promo-title .promo-size .promo-choise__items .promo-choise:nth-child(6) {
+            width: 50px;
+            height: 39px;
+        }
+
+        .promo .promo-title .promo-size .promo-choise__items .promo-choise:nth-child(7) {
+            width: 60px;
+            height: 39px;
         }
 
         .promo .promo-title .promo-title__mf {
@@ -1191,7 +1203,7 @@ export default {
 
         .promo .promo-title .promo-subtitle {
             display: flex;
-            width: 194px;
+            width: 100%;
         }
 
         .promo .promo-title .promo-subtitle .promo-subtitle-table {
@@ -1205,6 +1217,7 @@ export default {
 
         .promo .block-price {
             display: flex;
+            margin-left: auto;
         }
 
         .promo .block-price .promo-descr {
@@ -1217,6 +1230,62 @@ export default {
 
         .promo .promo-sub-descr {
             width: 270px;
+        }
+    }
+
+    @media only screen and (min-width: 1440px) {
+        .promo {
+            margin-top: 27px;
+        }
+
+        .promo .column-img {
+            justify-content: space-between;
+            height: 403px;
+        }
+
+        .promo .column-img .img-item {
+            margin-bottom: 0;
+        }
+
+        .promo .main-img__container {
+            margin-left: 10px;
+        }
+
+        .promo .main-img__container .main-img {
+            margin-left: 0;
+        }
+
+        .promo .promo-title {
+            max-width: 469px;
+            width: 100%;
+            margin-left: 24px;
+        }
+
+        .promo .promo-title .promo-size {
+            margin-top: 18px;
+            width: 365px;
+        }
+
+        .promo .promo-title .promo-size .size-name {
+            margin-top: 0;
+        }
+
+        .promo .promo-title .promo-size .promo-choise__items {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+
+        .promo .promo-title .promo-size .promo-choise__items .promo-choise {
+            margin-left: 0;
+        }
+
+        .promo .block-price .promo-descr {
+            width: 300px;
+        }
+
+        .promo .block-price .promo-descr .descr-container {
+            width: 260px;
         }
     }
 </style>
