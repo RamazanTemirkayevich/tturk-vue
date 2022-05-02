@@ -23,14 +23,28 @@
         </div>
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link" href="#">Sell at Turk</a>
+            <div>
+              <select name="" id="">
+                <option value=""><img src="" alt=""> Sell at Turk</option>
+                <option value="">Lorem</option>
+                <option value="">Lorem</option>
+              </select>
+            </div>
           </li>
+          <div class="top-border"></div>
           <li class="nav-item">
-            <a class="nav-link" href="#">Help</a>
+            <div>
+              <select name="" id="">
+                <option value=""><img src="" alt=""> Help</option>
+                <option value="">Setting</option>
+                <option value="">FAQ</option>
+              </select>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Mobile app</a>
           </li>
+          <div class="top-border"></div>
           <li class="nav-item">
             <div class="dropdown-currency">
               <select class="dropdown-select" name="" id="">
@@ -42,8 +56,9 @@
           </li>
           <li class="nav-item">
             <div>
+              <img src="@/assets/flag.png" alt="">
               <select name="" id="">
-                <option value=""><img src="" alt=""> English</option>
+                <option value=""> English</option>
                 <option value="">Russian</option>
                 <option value="">Turkish</option>
               </select>
@@ -204,6 +219,17 @@ export default {
   display: flex;
   align-items: center;
   padding: 10px;
+  width: 98px;
+}
+
+.header .header-wrapper .top-nav .nav-list .nav-item div {
+  display: flex;
+}
+
+.header .header-wrapper .top-nav .nav-list .top-border {
+  width: 13px;
+  border: 1px solid #CDCDCD;
+  transform: rotate(90deg);
 }
 
 .header .header-wrapper .top-nav .nav-list .nav-item select {
@@ -211,9 +237,18 @@ export default {
   background: #fafafa;
 }
 
+.header .header-wrapper .top-nav .nav-list .nav-item select:last-child {
+  margin-left: 5px;
+}
+
+.header .header-wrapper .top-nav .nav-list .nav-item select:last-child div img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
 .header .header-wrapper .top-nav .nav-list .nav-item .nav-link {
   text-decoration: none;
   color: #0A0A0A;
+  font-weight: 300px;
   font-size: 14px;
 }
 
@@ -471,6 +506,9 @@ export default {
   .header .header-wrapper .top-nav .top-logo {
     display: none;
   }
+  .header .header-wrapper .top-nav .nav-list {
+    width: 511px;
+  }
   .header .header-wrapper .header__main {
     align-items: center;
   }
@@ -503,7 +541,6 @@ export default {
   }
 
   .header .header-wrapper .top-nav .nav-list {
-    width: 423px;
     justify-content: space-between;
   }
 

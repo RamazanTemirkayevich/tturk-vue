@@ -838,6 +838,7 @@ export default {
 @media only screen and (min-width: 320px) {
     .review {
         flex-direction: column;
+        margin-top: 20px;
     }
 
     .review .review__block-mf {
@@ -1204,7 +1205,7 @@ export default {
 
 @media only screen and (min-width: 1024px) {
     .review {
-        margin-top: 0;
+        margin-top: 15px;
     }
 
     .review .review__block-mf {

@@ -12,10 +12,11 @@
                         <path d="M18.5408 1.7357C17.5543 0.616406 16.1859 0 14.6875 0C12.5802 0 11.246 1.25859 10.4979 2.31445C10.3038 2.58844 10.1386 2.86316 10 3.12168C9.86137 2.86316 9.69629 2.58844 9.50215 2.31445C8.75402 1.25859 7.41984 0 5.3125 0C3.81414 0 2.44566 0.616446 1.45918 1.73574C0.518242 2.80348 0 4.23348 0 5.76231C0 7.42649 0.649727 8.97434 2.04473 10.6334C3.29148 12.1162 5.08512 13.6446 7.16211 15.4145C7.93605 16.0741 8.73641 16.7561 9.58848 17.5016L9.61406 17.524C9.72453 17.6207 9.86227 17.6691 10 17.6691C10.1377 17.6691 10.2755 17.6207 10.3859 17.524L10.4115 17.5016C11.2636 16.7561 12.0639 16.0741 12.838 15.4145C14.9149 13.6447 16.7085 12.1163 17.9553 10.6334C19.3503 8.9743 20 7.42649 20 5.76231C20 4.23348 19.4818 2.80348 18.5408 1.7357ZM12.0779 14.5226C11.4107 15.0911 10.724 15.6762 10 16.3056C9.27602 15.6763 8.58934 15.0911 7.92203 14.5225C3.85723 11.0587 1.17188 8.77039 1.17188 5.76231C1.17188 4.51895 1.58613 3.3641 2.33836 2.51055C3.09922 1.64731 4.15543 1.17188 5.3125 1.17188C6.9191 1.17188 7.95766 2.16164 8.54594 2.99195C9.07363 3.73664 9.34898 4.48734 9.44289 4.77551C9.52145 5.01672 9.74633 5.17996 10 5.17996C10.2537 5.17996 10.4786 5.01672 10.5571 4.77551C10.651 4.48734 10.9264 3.73664 11.4541 2.99191C12.0423 2.16164 13.0809 1.17188 14.6875 1.17188C15.8446 1.17188 16.9008 1.64731 17.6616 2.51055C18.4139 3.3641 18.8281 4.51895 18.8281 5.76231C18.8281 8.77039 16.1428 11.0587 12.0779 14.5226Z" fill="#404040"/>
                     </svg>
                 </div>
+                <div class="img-mf-index">
+                    <span>1/4</span>
+                </div>
             </div>
-            <div class="img-mf-index">
-                <span>1/4</span>
-            </div>
+            
             <img src="@/assets/column_img/image44.png" alt="">
         </div>
   </div>
@@ -125,7 +126,11 @@
                     <div class="subtitle-mf-table">
                         <div>Delivery: <span>5,25 $</span></div>
                         <div>Estimated delivery time: <span>25/08</span></div>
-                        <div>Seller: <span>New Look</span></div>
+                        <div>Seller: <span>New Look</span>
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 0.765625C3.9526 0.765625 0.265625 4.45393 0.265625 9C0.265625 13.5487 3.9526 17.2344 8.5 17.2344C13.0474 17.2344 16.7344 13.5487 16.7344 9C16.7344 4.45393 13.0474 0.765625 8.5 0.765625ZM8.5 4.41797C9.27018 4.41797 9.89453 5.04232 9.89453 5.8125C9.89453 6.58268 9.27018 7.20703 8.5 7.20703C7.72982 7.20703 7.10547 6.58268 7.10547 5.8125C7.10547 5.04232 7.72982 4.41797 8.5 4.41797ZM10.3594 12.8516C10.3594 13.0716 10.181 13.25 9.96094 13.25H7.03906C6.81903 13.25 6.64062 13.0716 6.64062 12.8516V12.0547C6.64062 11.8347 6.81903 11.6562 7.03906 11.6562H7.4375V9.53125H7.03906C6.81903 9.53125 6.64062 9.35285 6.64062 9.13281V8.33594C6.64062 8.1159 6.81903 7.9375 7.03906 7.9375H9.16406C9.3841 7.9375 9.5625 8.1159 9.5625 8.33594V11.6562H9.96094C10.181 11.6562 10.3594 11.8347 10.3594 12.0547V12.8516Z" fill="#CDCDCD"/>
+                        </svg>
+                        </div>
                     </div>
                 </div>
 
@@ -136,7 +141,7 @@
                     <div class="promo-counter">
                         <button @click="counter--" type="button" class="promo-counter-minus">-</button>
                         <h3 class="promo-counter-number">{{ counter = 0 }}</h3>
-                        <button @click="counter++" type="button" class="promo-counter-plus">+</button>
+                        <button v-on="counter++" type="button" class="promo-counter-plus">+</button>
                     </div>
                     <p class="promo-count-title">12451 pcs. in stock</p>
                 </div>
@@ -144,7 +149,13 @@
                     <ul class="promo-subtitle-table">
                         <li class="promo-subtitle-delivery">Delivery: 5,25 $</li>
                         <li class="promo-subtitle-two">To Istanbul via PONY EXPRESS</li>
-                        <li class="promo-subtitle-time">Estimated delivery time: <span>25/08</span></li>
+                        <li class="promo-subtitle-time">Estimated delivery time: 
+                            <span>25/08</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z" fill="#CDCDCD"/>
+                                <path d="M7.17 3C7.81 3 8.30667 3.17667 8.66 3.53C9.01333 3.87667 9.19 4.32667 9.19 4.88C9.19 5.43333 8.95 5.94333 8.47 6.41C8.45 6.43 8.39 6.48333 8.29 6.57C8.19667 6.65667 8.13667 6.71667 8.11 6.75C8.09 6.77667 8.04333 6.83 7.97 6.91C7.89667 6.98333 7.84667 7.04667 7.82 7.1C7.8 7.14667 7.77 7.21 7.73 7.29C7.69 7.36333 7.66333 7.44 7.65 7.52C7.63667 7.6 7.63 7.68667 7.63 7.78V7.95H6.42V7.66C6.42 7.53333 6.42667 7.41333 6.44 7.3C6.46 7.18667 6.49333 7.07667 6.54 6.97C6.59333 6.86333 6.63333 6.77667 6.66 6.71C6.69333 6.64333 6.75333 6.56 6.84 6.46C6.92667 6.35333 6.98333 6.28333 7.01 6.25C7.04333 6.21667 7.11333 6.14667 7.22 6.04C7.32667 5.93333 7.39 5.87 7.41 5.85C7.77 5.50333 7.95 5.19667 7.95 4.93C7.95 4.70333 7.88 4.52333 7.74 4.39C7.60667 4.25 7.40667 4.18 7.14 4.18C6.86 4.18 6.63333 4.26667 6.46 4.44C6.29333 4.61333 6.21 4.84 6.21 5.12H5C5 4.46 5.19 3.94333 5.57 3.57C5.95667 3.19 6.49 3 7.17 3ZM7.72 8.76V10.15H6.33V8.76H7.72Z" fill="#CDCDCD"/>
+                            </svg>
+                        </li>
                     </ul>
                 </div>
                 <button class="promo-btn">
@@ -475,6 +486,10 @@ export default {
        margin-top: 10px;
        color: #626262;
        font-size: 14px;
+       display: flex;
+       justify-content: space-between;
+       width: 203px;
+       align-items: center;
    }
 
    .promo .promo-title .promo-subtitle .promo-subtitle-table .promo-subtitle-time span {
@@ -638,41 +653,48 @@ export default {
            border: none;
        }
 
-       .main-img__container-mf .main-img-mf .img-mf-back {
-           position: absolute;
+        .main-img__container-mf .main-img-mf .function-container {
+            position: absolute;
+            margin-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 91%;
+            height: 379px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .main-img__container-mf .main-img-mf .function-container:last-child {
+            justify-content: end;
+        }
+
+       .main-img__container-mf .main-img-mf .function-container .img-mf-back {
            display: flex;
            align-items: center;
            justify-content: center;
-           margin-top: 15px;
-           margin-left: 15px;
            width: 30px;
            height: 30px;
            background: #FAFAFA;
            border-radius: 5px;
-           z-index: 1;
        }
 
-       .main-img__container-mf .main-img-mf .img-mf-like {
-           position: absolute;
+       .main-img__container-mf .main-img-mf .function-container .img-mf-like {
            display: flex;
            align-items: center;
            justify-content: center;
-           margin-top: 15px;
-           margin-left: 17em;
            width: 30px;
            height: 30px;
            background: #FAFAFA;
            border-radius: 5px;
-           z-index: 1;
        }
 
-       .main-img__container-mf .main-img-mf .img-mf-index {
+       .main-img__container-mf .main-img-mf .function-container .img-mf-index {
            position: absolute;
            display: flex;
            align-items: center;
            justify-content: center;
-           margin-top: 23em;
-           margin-left: 15px;
+           margin-top: 111%;
            width: 42px;
            height: 26px;
            background: #FFFFFF;
@@ -787,6 +809,7 @@ export default {
 
         .promo .promo-color__mf span {
             color: #0a0a0a;
+            margin-left: 5px;
         }
 
         .promo .promo-color__mf .column-img__mf {
@@ -925,11 +948,18 @@ export default {
             color: #919191;
         }
 
+        .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div:last-child {
+            width: 137px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
         .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div span {
             color: #0A0A0A;
         }
 
-        .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div span:last-child {
+        .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div:last-child span {
             border-bottom: 1px dashed #919191;
         }
 
@@ -993,6 +1023,10 @@ export default {
        .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div {
            font-size: 18px;
        }
+
+       .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div:last-child {
+            width: 150px;
+        }
     }
 
     @media only screen and (min-width: 414px) {
@@ -1046,6 +1080,10 @@ export default {
        .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div {
            font-size: 20px;
        }
+
+       .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div:last-child {
+            width: 165px;
+        }
     }
 
     @media only screen and (min-width: 768px) {
@@ -1140,6 +1178,10 @@ export default {
 
         .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div {
             font-size: 22px;
+        }
+
+        .promo .promo-title .promo-subtitle-mf .subtitle-mf-table div:last-child {
+            width: 180px;
         }
 
         .descr-mf .descr-title .title-name {
