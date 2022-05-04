@@ -21,6 +21,7 @@
                     </svg>
                 </button>
             </div>
+
             <div class="carousel-wrapper">
                 <div class="carousel-container">
                     <div class="carousel-track">
@@ -586,8 +587,9 @@
 </template>
 
 <script>
-export default {
 
+export default {
+  
 }
 </script>
 

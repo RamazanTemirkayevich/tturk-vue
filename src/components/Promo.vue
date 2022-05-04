@@ -139,9 +139,9 @@
                 <p class="promo-amount">Amount: <span class="promo-amount-span"></span></p>
                 <div class="promo-count">
                     <div class="promo-counter">
-                        <button @click="counter--" type="button" class="promo-counter-minus">-</button>
-                        <h3 class="promo-counter-number">{{ counter = 0 }}</h3>
-                        <button v-on="counter++" type="button" class="promo-counter-plus">+</button>
+                        <button @click="count--" v-if="count !== 1" type="button" class="promo-counter-minus">-</button>
+                        <h3 class="promo-counter-number">{{ count }}</h3>
+                        <button @click="count++" type="button" class="promo-counter-plus">+</button>
                     </div>
                     <p class="promo-count-title">12451 pcs. in stock</p>
                 </div>
@@ -230,8 +230,23 @@
 </template>
 
 <script>
-export default {
+import Modal from './Modal.vue'
 
+export default {
+    data() {
+        return {
+            count: 1,
+            ModalOpen: false
+        }
+    },
+    components: {
+        Modal
+    },
+    methods: {
+        open() {
+            this.$emit('open')
+        }   
+    }
 }
 </script>
 
@@ -639,6 +654,21 @@ export default {
        width: 184px;
        display: flex;
        margin-top: 5px;
+   }
+
+   .promo-modal {
+       display: none;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, .4);
+       z-index: 1;
+       transition: 0.7s;
+       overflow-y: auto;
    }
 
    @media only screen and (min-width: 320px) {

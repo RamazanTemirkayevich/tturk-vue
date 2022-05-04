@@ -416,18 +416,34 @@
                                 <span>0</span>
                             </div>
                         </div>
-                            <button class="block__container-btn" id="open">Write a review</button>
+                            <button @click="ModalOpen = true" class="block__container-btn" id="open">Write a review</button>
                         </div>
                     </div>
 
             </div>
         </section>
+        <Modal v-if="ModalOpen" />
     </div>
 </template>
 
 <script>
-export default {
+import Modal from './Modal.vue'
 
+export default {
+    data() {
+        return {
+            count: 1,
+            ModalOpen: false
+        }
+    },
+    components: {
+        Modal
+    },
+    methods: {
+        open() {
+            this.$emit('open')
+        }   
+    }
 }
 </script>
 
