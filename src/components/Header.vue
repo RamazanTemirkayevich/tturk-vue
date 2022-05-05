@@ -416,7 +416,7 @@ export default {
   }
 
   .header .header-wrapper .header__search .search-input {
-    width: 145px;
+    width: 82%;
   }
 
   .header .header-wrapper .header__search .search-inside .search-inside__btn {

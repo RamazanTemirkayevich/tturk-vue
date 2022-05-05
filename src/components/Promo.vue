@@ -677,7 +677,9 @@ export default {
        }
 
         .main-img__container-mf .main-img-mf {
-           position: relative; 
+           position: relative;
+           display: flex;
+           justify-content: space-between; 
            margin-left: 0;
            width: 100%;
            border: none;
@@ -756,11 +758,12 @@ export default {
             height: 164px;
             border-radius: 5px;
             visibility: visible;
+            margin: auto;
         }
 
         .promo .promo-descr__mf .descr-container {
             margin: 0 auto;
-            width: 260px;
+            width: 100%;
             height: 243px;
         }
 
@@ -864,7 +867,7 @@ export default {
         }
 
         .promo .promo-title {
-            margin-left: 0;
+            margin: auto;
             width: 290px;
         }
 
@@ -1008,7 +1011,8 @@ export default {
        }
 
        .promo .promo-color__mf {
-           max-width: 100%;
+           max-width: 370px;
+           margin: auto;
        }
 
        .promo .promo-color__mf .column-img__mf .img-item__mf {
@@ -1039,7 +1043,7 @@ export default {
        }
 
        .promo .promo-title .promo-title__mf .promo-title__name h2 {
-           font-size: 22px;
+           font-size: 20px;
        }
 
        .promo .promo-title .promo-title__mf .promo-title__descr .promo-raiting .reviews-number {
@@ -1079,6 +1083,7 @@ export default {
 
        .promo .promo-title .promo-size {
            max-width: 370px;
+           margin: auto;
        }
 
        .promo .promo-title .promo-size .promo-choise__items .promo-choise {
@@ -1091,9 +1096,9 @@ export default {
            height: 49px;
        }
 
-       .promo .promo-title .promo-title__mf {
+       /* .promo .promo-title .promo-title__mf {
             max-width: 370px;
-       }
+       } */
 
        .promo .promo-title .promo-title__mf .promo-title__name h2 {
            font-size: 24px;

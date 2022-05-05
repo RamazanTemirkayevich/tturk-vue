@@ -818,7 +818,7 @@ export default {
     .carousel .line {
         margin-top: 20px;
         display: block;
-        width: 290px;
+        width: 100%;
         border: 1px solid #EEEEEE;
     }
 }

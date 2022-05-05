@@ -99,6 +99,13 @@ export default {
       }
     }
 
+    @media only screen and (min-width: 375px) {
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
     @media only screen and (min-width: 1024px) {
       .container {
         padding-left: 69px;

@@ -84,7 +84,7 @@
                            <span>0</span>
                       </div>
                 </div>
-                    <button class="block__container-btn" id="open">Write a review</button>
+                    <button @click="ModalOpen = true" class="block__container-btn" id="open">Write a review</button>
                 </div>
             </div>
             <div class="review-content">
@@ -422,7 +422,7 @@
 
             </div>
         </section>
-        <Modal v-if="ModalOpen" />
+        <Modal v-if="ModalOpen" @click.self="ModalOpen = false"/>
     </div>
 </template>
 
@@ -900,7 +900,7 @@ export default {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-        width: 263px;
+        width: 100%;
         height: 135px;
     }
 
@@ -1094,12 +1094,13 @@ export default {
 
 @media only screen and (min-width: 375px) {
     .review .review__block-mf {
-        width: 100%;
+        /* width: 365px; */
+        margin: auto;
     }
 
-    .review .review__block-mf .block__container {
+    /* .review .review__block-mf .block__container {
         width: 320px;
-    }
+    } */
 
     .review .review-content {
         width: 100%;

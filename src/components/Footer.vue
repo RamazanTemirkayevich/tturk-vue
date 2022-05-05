@@ -85,13 +85,12 @@
 
     .footer .footer-container {
         border-top: 1px solid #EEEEEE;
-        width: 100%;
-        height: 3px;
+        width: 90%;
         margin: auto;
     }
 
     .footer .footer-container .footer-menu {
-        width: 290px;
+        width: 100%;
         margin: auto;
         display: flex;
         justify-content: space-between;
