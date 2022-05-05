@@ -679,7 +679,7 @@ export default {
         .main-img__container-mf .main-img-mf {
            position: relative;
            display: flex;
-           justify-content: space-between; 
+           justify-content: center; 
            margin-left: 0;
            width: 100%;
            border: none;
@@ -1273,6 +1273,7 @@ export default {
         .promo .promo-title {
             margin-left: 6px;
             width: 32%;
+            margin: unset;
         }
 
         .promo .promo-title .promo-color {
@@ -1286,6 +1287,7 @@ export default {
 
         .promo .promo-title .promo-size {
             width: 100%;
+            margin: unset;
         }
 
         .promo .promo-title .promo-size .size-name {

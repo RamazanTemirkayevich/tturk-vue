@@ -4,7 +4,7 @@
             <div class="box-container">
                 <div class="title-modal">
                     <h1>Write a review</h1>
-                    <ModalClose @click.self="close"/>
+                    <ModalClose v-if="ModalClose" @click.self="ModalClose = true" />
                 </div>
                 <div class="stars-block">
                     <p>How would you rate the product</p>
@@ -287,6 +287,11 @@ export default {
         display: flex;
         width: 270px;
         justify-content: space-between;
+    }
+
+    .modal .modal-box .box-container .stars-block .stars svg {
+        width: 48px;
+        height: 46px;
     }
 
     .modal .modal-box .box-container .stars-block .stars svg path:hover {

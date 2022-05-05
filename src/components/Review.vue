@@ -422,7 +422,7 @@
 
             </div>
         </section>
-        <Modal v-if="ModalOpen" @click.self="ModalOpen = false"/>
+        <Modal v-if="ModalOpen" @click.self="ModalOpen = false" />
     </div>
 </template>
 
@@ -442,7 +442,7 @@ export default {
     methods: {
         open() {
             this.$emit('open')
-        }   
+        } 
     }
 }
 </script>
@@ -863,6 +863,7 @@ export default {
         height: 289px;
         border: 1px solid #EEEEEE;
         border-radius: 5px;
+        margin: auto;
     }
 
     .review .review__block-mf .block__container {
@@ -970,6 +971,7 @@ export default {
     .review .review-content {
         width: 290px;
         padding-top: 15px;
+        margin: auto;
     }
 
     .review .review-content .review-title {
